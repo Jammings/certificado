@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swith</title>
+    
+    <center>
+    <script>
+        
+        var numero1 = parseFloat(prompt("Introduce un número:"));
+        var numero2 = parseFloat(prompt("Introduce otro número:"));
+        var operacion = prompt("Introduce una operación: \n + Sumar \n - Restar \n / Dividir \n * Multiplicar");
+           
+        switch(operacion){
+            case '+':
+            document.write("Sumaremos "+ numero1 + ' + ' + numero2 + ' = ' + (numero1 + numero2));
+            break;
+            case '-':
+            document.write("Restaremos "+ numero1 + ' - '  + numero2 + ' = ' + (numero1 - numero2));
+            break;
+            case '/':
+            document.write("Dividiremos "+ numero1 + ' / '  + numero2 + ' = ' + (numero1 / numero2));
+            break;
+            case '*':
+            document.write("Multiplicaremos "+ numero1 + ' * '  + numero2 + ' = ' + (numero1 * numero2));
+            break;
+            default:
+                window.alert("NO INGRESASTE UNA OPERACION VÁLIDA")
+
+        }
+
+    </script>
+
+    </center>
+</head>
+<body>
+    
+</body>
+</html>

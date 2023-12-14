@@ -1,0 +1,14 @@
+body {
+    font-family: Arial, Helvetica, Sans-serif;
+    background-color: rgb(255, 255, 255);
+    font-size: 15px;
+  }
+
+.parrafo {
+    width: 80%; /* Ajusta el ancho del cuadro según tus necesidades */
+    margin: 0 auto; /* Centra horizontalmente el cuadro */
+    border: 2px solid #333; /* Agrega un borde al cuadro */
+    padding: 20px; /* Añade espaciado interno al cuadro */
+    text-align: justify; /* Justifica el texto dentro del cuadro */
+    color: rgb(0, 0, 0);
+}

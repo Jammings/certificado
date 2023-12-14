@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<natacion>
+                <nivel_de_atleta></nivel_de_atleta>
+                <entrenador>
+                        <nombre dni="16854320Ñ"></nombre>
+                        <edad años="40"></edad>
+                        <especialidad></especialidad>
+                </entrenador>
+                <datos_atleta>
+                        <nombre></nombre>
+                        <edad></edad>
+                        <genero></genero>
+                </datos_atleta>
+                <piscina aforo="50 Personas">
+                        <tipo></tipo>
+                        <temperatura unidad="Grados centigrados"></temperatura>
+                    <dimensiones>
+                        <longitud></longitud>
+                        <ancho></ancho>
+                        <profundidad></profundidad>
+                    </dimensiones>
+                </piscina>
+                <asistencia>
+                      <dia></dia>
+                      <turno></turno>
+                </asistencia>
+                <equipamiento>
+                      <flotadores></flotadores>
+                      <cronometro></cronometro>
+                      <gafas></gafas>
+                      <toalla></toalla>
+                </equipamiento>
+                <vestuario>
+                      <tipo></tipo>
+                      <taquillas></taquillas>
+                </vestuario>
+</natacion>

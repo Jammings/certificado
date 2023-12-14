@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<concesionario>
+  
+  <informacionCoche>
+         
+        <marca>Audi</marca>
+        <matricula> 1234-HSL </matricula>
+        <year> 2023 </year>
+        <yearMatriculacion> 2023 </yearMatriculacion>
+        <combustible> Gasolina </combustible>
+        <motor> 305 Caballos de fuerza </motor>
+
+   
+  </informacionCoche>  
+
+  <informacionMoto>
+   
+        <marca>Mercedes</marca>
+        <matricula> 5678-AXS </matricula>
+        <year> 2022 </year>
+        <yearMatriculacion> 2021 </yearMatriculacion>
+        <combustible> Gasolina </combustible>
+        <motor> 205 Caballos de fuerza </motor>
+
+   
+  </informacionMoto>
+
+
+</concesionario>

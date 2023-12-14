@@ -1,0 +1,18 @@
+		article > div {
+			background-color: red;
+		}
+
+		article ~ article {
+			color: yellow;
+			font-size: 30px;
+			border: 3px solid black;
+		}
+
+		#texto{
+			font-size: 40px;
+
+		}
+		.texto2{
+			font-size: 40px;
+			width: 50%;
+		}

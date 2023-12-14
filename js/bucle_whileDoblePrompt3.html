@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bucle While + Prompt</title>
+
+    <center>
+    <script>
+
+        var primera = parseInt(prompt("Introduce un número:"))
+        var segunda = parseInt(prompt("Introduce otro número:"));
+        
+
+        
+        if(segunda < primera){
+            var aux = primera;
+            primera = segunda;
+            segunda = aux;
+        
+        }
+            while(primera <= segunda){
+            document.write("<br>" + primera );
+            primera = primera + 1;
+          } 
+        
+   </script>
+ </center>
+   
+  </head>
+  <body></body>
+</html>

@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<futbol_teams>
+        <nombre>U. D. Logroñés</nombre>
+        <Pais ciudad="Logroño">España</Pais>   
+            <estadio> 
+                    <nombre_estadio>Estadio Las Gaunas</nombre_estadio>
+                    <capacidad espectadores="Personas">16000</capacidad> 
+                    <year mes="28 de febrero"> 2002</year>
+                    <arquitecto>Antonio Lamela</arquitecto>
+            </estadio>
+
+        <fundacion fecha="año">2009</fundacion>
+        <presidente propietario="Félix Revuelta">Félix Revuelta</presidente>
+        <equipacion>
+              <marca>Joma</marca>
+              <colores uniforme="camiseta">Blanquirroja</colores>              
+              <colores uniforme="pantalon">Negro</colores>              
+              <colores uniforme="medias">Negras</colores>
+        </equipacion> 
+        <titulos>
+              <nombre_titulo tipo="Nacional">Segunda División B</nombre_titulo>              
+              <fecha fecha="año">2019-2020</fecha>
+              <nombre_titulo tipo="Regional">Copa Federación</nombre_titulo>              
+              <fecha fecha="año">2023</fecha>
+        </titulos>
+</futbol_teams>

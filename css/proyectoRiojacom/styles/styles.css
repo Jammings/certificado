@@ -1,0 +1,150 @@
+	html {
+  		height: 100%;
+	}
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap');
+    
+    @font-face {
+    font-family: 'Guardian Sans Semibold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Guardian Sans Semibold'), url('./fonts/GuardianSansSemibold.woff') format('woff');
+    }
+
+    @font-face {
+    font-family: 'Guardian Sans Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Guardian Sans Regular'), url('./fonts/GuardianSansRegular.woff') format('woff');
+    }
+
+    @font-face {
+    font-family: 'Guardian Sans Medium';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Guardian Sans Medium'), url('./fonts/GuardianSansMedium.woff') format('woff');
+    }
+
+.container {
+  display: flex;
+  justify-content: center;
+
+}
+
+.contenedor {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.contenedor .parrafo2 {
+  	text-align: center;
+  	width: 95%;
+
+}
+
+.portada {
+
+}
+
+.portada img {
+	width: 650px;
+	height: 455px;
+	margin-right: 0px;
+
+}
+
+.parrafo {
+	width: 78%;
+	color: #6B6B6B;
+	font-family: 'IBM Plex Sans', sans-serif;
+	font-size: 13px;
+	margin-top: -10px;
+}
+
+.parrafo2 {
+}
+
+.parrafo2 p {
+	font-family: "Guardian Sans Regular",sans-serif;
+	font-size: 16px;
+}
+
+.parrafo2 h1 {
+	font-size: 36px;
+	font-family: "Guardian Sans Semibold",sans-serif;
+}
+
+.parrafo2 img {
+	width: 14px;
+	height: 14px;
+}
+
+.subtitulo {
+	width: 100%;
+	font-family: "Guardian Sans Semibold",sans-serif;
+}
+
+.contenedor2{
+	border-left: 1px solid #D7D7D7;
+	padding: 0px 0px 0px 10px;
+	width: 68%;
+}
+
+.segundaimagen {
+	padding: 0px 0px 0px 10px;
+	width: 50%;
+
+}
+
+.segundaimagen img {
+	width: 280px;
+	height: 188px;
+	border-top: 1px solid #D7D7D7;
+	padding-top: 20px;
+
+}
+.segundaimagen h2 {
+	font-family: "Guardian Sans Semibold",sans-serif;
+	width: 70%;
+	font-size: 21px;
+	display: flex;
+	padding-bottom: 10px;
+}
+.segundaimagen p {
+	font-family: 'IBM Plex Sans', sans-serif;
+	width: 65%;
+	font-size: 14.9px;
+	margin-top: -10px;
+}
+
+li {
+	font-family: "Guardian Sans Medium",sans-serif;
+	font-size: 14.5px;
+	width: 65%;
+	list-style-type: square;
+	margin-left: -20px;
+}
+
+.subtitulo h2 {
+	width: 40%;
+	font-size: 21.5px;
+	margin: 10px;
+}
+
+.allpage {
+	display: flex;
+  	justify-content: center;
+  	align-items: center;
+  	margin: 0px 0px 0px 450px;
+
+}
+
+span {
+	color: black;
+}
+
+#corto {
+	width: 90%;
+	height: 5%;
+}

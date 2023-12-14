@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Tu Título</title>
+	<style type="text/css">
+
+		@font-face {
+		    font-family: 'Addington CF Regular';
+		    src: url('AddingtonCF-Regular.ttf') format('truetype');
+		}
+
+		@font-face {
+		    font-family: 'Circular Std Medium';
+		    src: url('circular-std-medium-500.ttf') format('truetype');
+		}
+
+
+		body {
+			background-color: #6CA9BA;
+			margin: 0;
+		}
+
+		img {
+			width: 100%;
+		}
+
+
+		#menu ul {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+			width: 100%;
+			height: 70px;
+			position: relative;
+			background-color: white;
+		}
+
+		#menu ul li {
+			float: left;
+			width: 13%;
+			height: 100%;
+		}
+
+		#menu ul h3 {
+			color: black;
+			font-weight: 300;
+			font-size: 12px;
+			font-family: 'Circular Std Medium';
+			text-transform: uppercase;
+			letter-spacing: 1px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			cursor: pointer;
+			padding-top: 14px;
+		}
+
+		#menu ul li:hover {
+			background: #5CD8AD;
+		}
+
+		#menu ul ul {
+			display: none;
+			position: absolute;
+		}
+
+		#menu ul li:hover > ul {
+			display: block;
+		}
+
+		.burger {
+			padding: 9px 0px 0px 40px;
+		}
+
+		.logo {
+			padding-right: 150px;
+		}
+
+		section {
+			display: flex;
+			justify-content: center;
+			width: 100%;
+		}
+
+		article {
+			position: relative;
+			width: 90%;
+		}
+
+
+		p {
+			text-align: justify;
+			color: white;
+		}
+
+		.parrafo1 {
+			font-family: 'Addington CF Regular';
+			font-weight: 100;
+			font-size: 56px;
+			color: white;
+			position: absolute;
+			margin-top: 40px;
+			left: -6%;
+		/*	transform: translate(-50%, -50%); */
+			text-align: center;
+			width: 50%;
+		}
+
+		.parrafo2 {
+			font-family: 'Addington CF Regular';
+			color: white;
+			font-size: 15.5px;
+			position: absolute;
+			margin-top: 150px;
+			left: -1%;
+		/*	transform: translate(-50%, -50%); */
+			text-align: left;
+		}
+
+		.masinfo {
+			font-family: 'Addington CF Regular';
+			color: white;
+			position: absolute;
+			top: 37%;
+			left: 0%;
+		/*	transform: translate(-50%, -50%); */
+			text-align: left;
+			border: 2px solid white;
+			padding: 15px;
+		}
+
+		img {
+			width: 80%;
+			padding: 23px 0px 0px 32px;
+			display: block;
+			margin-right: 50px;
+		}
+
+		.centrar-1-2 img {
+			padding: 0px 20px 0px 0px;
+		}
+
+		.soledad{
+			padding-left: 600px;
+		}
+
+		.soledad img {
+			width: 100%;
+		}
+
+
+		.boton {
+			margin-top: 70px;
+		}
+
+
+		.centrar-1 {
+			width: 10%;
+
+		}
+
+		.centrar div {
+			display: flex;
+			justify-content: center;
+			margin: -27px;
+		}
+
+		.contenedor {
+			width: 100%;
+		}
+
+		footer img {
+			width: 200px;
+			height: 120px;
+			float: left;
+		}
+
+		footer p {
+			width: 200px;
+			float: left;
+		}
+
+		footer > div {
+			display: flex;
+			margin-top: 80px;
+			border-top: 1px solid grey;
+			margin-bottom: 10px;
+		}
+		
+		.footer1 {
+			border-top: 2px solid black;
+		}
+
+	</style>
+</head>
+<body>
+	<nav id="menu">
+		<ul>
+			<li class="logo"><img src="logo.webp"></li>
+			<li><h3 href="#">Programas sociales</h3></li>
+			<li><h3 href="#">Cultura y ciencia</h3></li>
+			<li><h3 href="#">Educación y becas</h3></li>
+			<li><h3 href="#">Investigación y salud</h3></li>
+			<li><h3 href="#">Conócenos</h3></li>
+			<li><img class="burger" src="search.svg"/></li>
+		</ul>
+	</nav>
+	<section>
+		<article>
+			<div class="contenedor">
+				<div class="boton">
+					<div class="centrar">
+						<div class="centrar-1">
+							<p class="parrafo1">La soledad no se ve, <i>se siente</i></p>
+								<div>
+									<p class="parrafo2">En nuestro país, cerca de 3 millones de personas mayores sufren soledad. Puede que <br> no las veas, pero así es como se sienten.</p>
+									<div class="parrafo2 masinfo">MÁS INFORMACIÓN</div>
+								</div>
+						</div>
+						<div class="soledad">
+							<img src="soledad.webp"/>
+						</div>
+					</div>
+				</div>
+			</div>
+		</article>
+	</section>
+	<footer>
+		<div>
+			<div class="footer1">
+				<img src="footer1.webp" />
+				<div></div>
+				<p>La soledad no se ve, <i>se siente</i></p>
+			</div>
+			<div>
+				<img src="footer2.webp" />
+				<p>CaixaForum+</p>
+			</div>
+			<div>
+				<img src="footer3.webp" />
+				<p>El Café del Observatorio<br>Social</p>
+			</div>
+			<div>
+				<img src="footer4.webp" />
+				<p>#NingúnHogar<br>SinAlimentos</p>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>

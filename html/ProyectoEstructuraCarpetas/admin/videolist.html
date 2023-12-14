@@ -1,0 +1,182 @@
+  <!DOCTYPE html>
+  <html>
+
+  <head>
+    <meta charset="utf-8">
+    <title>Tus Vídeos</title>
+    <link rel="shortcut icon" href="../imagenes/multimedia.png" />
+    <style>
+      h1 {
+        margin: 80px;
+      }
+
+      a {
+        text-decoration: none;
+        font-family: verdana;
+        color: white;
+      }
+      
+      h3 {
+        text-align: center;
+      }
+
+      p {
+        font-family: verdana;
+      }
+
+      img {
+        border-collapse: collapse;
+        border-radius: 10px;
+        border: 10;
+        width: 500px;
+        height: 250px
+      }
+
+      .banner {
+        width: 100%;
+        height: 300px;
+      }
+
+      video {
+        width: 100%;
+        height: 480px;
+        border-radius: 10px;
+        border-color: #ffffff;
+        border: 3px solid;
+      }
+
+      table {
+        border-radius: 10px;
+        background-color: #FF914D;
+        border-color: #ffffff;
+        border: 3px solid;
+      }
+
+      iframe {
+        width: 100%;
+        height: 480px;
+        border-radius: 10px;
+        border-color: #ffffff;
+        border: 3px solid;
+      }
+
+      .top {
+        border-radius: 10px;
+        background-color: #DF68A8;
+        border-color: #ffffff;
+        border: 0px solid;
+        margin-right: 150px;
+        margin-left:-200px ;
+      }
+      .fot {
+        background-color: #931EA0;
+        border-radius: 150px;
+      }
+
+      .contacto {
+        background-color: #FF914D;
+      }
+    </style>
+  </head>
+
+  <body bgcolor="#292929">
+    <header>
+      <font color="white" face="Verdana">
+        <hr>
+        <a href="../index.html"><img class="banner" id=home src="../imagenes/banner_video.png" alt="" /></a>
+        <nav>
+          <hr>
+          <table bgcolor="#619CCF" bordercolor="737373" border="0" cellpadding="8" cellspacing="0" width="100%"
+            height="50">
+            <tr align="center">
+
+              <td><a href="../index.html">
+                  <font color="#FFFFFF" size="6">Inicio</font>
+                </a></td>
+              <td><a href="../user/galeria.html">
+                  <font color="#FFFFFF" size="6">Galeria</font>
+                </a></td>
+              <td bgcolor="#EAC255"><a href="../admin/videolist.html">
+                  <font color="#FFFFFF" size="6">Videolist</font>
+                </a></td>
+            </tr>
+          </table>
+          <hr>
+        </nav>
+    </header>
+    <main>
+            <table class="top" align="right" cellpadding="15" cellspacing="10">
+                <tr>
+                <td><a href="../user/galeria.html#topimagen">Foto mas votada 📷</a></td>
+              </tr>
+              <tr>
+                <td  class="fot"><a href="../admin/videolist.html#topvideo">Vídeo mas visto 🎬</a></td>
+              </tr>
+            </table>
+              <h1 align="center" style="font-size: 75px" id=titulo>¡Vive tus Vídeos!</h1>
+                  <section>
+        <article>
+              <center>
+                <table border="2" cellpadding="15">
+                  <tr>
+                    <td><video src="../video/rawayana_vocabulario.mp4" controls
+                        poster="../imagenes/vocabulario.png">Rawayana - Vocabulario Básico</video>
+                        <h3>Rawayana - Vocabulario Básico</h3>
+                      </td>
+                  </tr>
+                  <tr>
+                    <td><video src="../video/rawayana_neutro_incomprendido.mp4" controls muted
+                        poster="../imagenes/incomprendido.jpg">Rawayana, Neutro Shorty, Orestes Gomez - Incomprendido
+                      </video>
+                      <h3>Rawayana, Neutro Shorty, Orestes Gomez - Incomprendido</h3>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><iframe id=topvideo src="https://www.youtube.com/embed/U7qth6cItLI?autoplay=1&mute=1"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                        <h3>Hawaii Vacation - TVARI</h3>
+                      </td>
+                  </tr>
+                </table>
+              </center>
+            </article>
+          </section>
+    </main>
+    </table>
+    <br />
+    <br />
+    <br />
+    <footer>
+      <font align="center">
+        <hr>
+            <table class="contacto" align="center" bgcolor="#505050" border="0" cellpadding="10" cellspacing="5" width="100%" height="5">
+              <tr>
+                  <td colspan='4'><iframe
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2943.444657949283!2d-2.4473161234570955!3d42.46083072872852!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd5aab4401162c91%3A0xe65a34ad7fec9237!2sAdr%20Infor%20S%20L!5e0!3m2!1ses!2ses!4v1697623081977!5m2!1ses!2ses"
+                      width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                      referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <h3>Adr - Centro de formación</h3>
+                  </td>
+                </tr>
+              <td width="250px"><a href="https://www.adrformacion.com/cursos/" target="_blank">
+                  <font color="#FFFFFF" size="6">Catálogo formativo
+                </a></td>
+              <td><a href="#home">
+                  <font color="#FFFFFF" size="6">Dirección
+                </a></td>
+              <td><a href="tel:+34941250116">
+                  <font color="#FFFFFF" size="6">Teléfono
+                </a></td>
+              <td><a href="mailto:correo@ejemplo.com">
+                  <font color="#FFFFFF" size="6">Email
+                </a></td>
+            </table>
+        <hr>
+      </font>
+    </footer>
+    </font>
+  </body>
+
+  </html>

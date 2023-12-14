@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Menu</title>
+	<style>
+		
+		#menu ul li {     
+			background-color:#2e518b;
+
+		} 
+		#menu ul {     
+			list-style:none;     
+			margin:0;     
+			padding:0;
+			width: 100%;
+  			height: 120px;
+  			position: relative;
+  			background-color: #2c3e50;
+
+		} 
+		#menu ul a {     
+			color:#fff;     
+			text-decoration:none;     
+			font-weight:400;     
+			font-size:24px;     
+			padding:10px;     
+			font-family: Arial,"HelveticaNeue", "Helvetica Neue", Helvetica, sans-serif;   
+			text-transform:uppercase;   
+			letter-spacing:1px;
+			display: flex;
+			width: 100%;
+			height: 100%;
+			justify-content: center;
+			align-items: center;
+			position: relative;
+		} 
+		#menu ul li {     
+			float:left;
+			width: 20%;     
+			height: 100%;
+		}  
+		#menu ul li:hover {     
+	
+			background: #9b59b6; 
+		}
+
+		#menu li:nth-child(1):hover; #menu li:nth-child(1):focus,
+		#menu li:nth-child(1):active 
+ 		 & ~ .slider {
+   		 left: 75%;
+    	background-color: #16a085;
+ 		 }
+		
+		#menu li:nth-child(2):hover,
+		#menu li:nth-child(2):focus,
+		#menu li:nth-child(2):active 
+		  & ~ #slider {
+    	left: 25%;
+   		 background-color: #9b59b6;
+  		}
+
+  		#menu li:nth-child(3):hover,
+		#menu li:nth-child(3):focus,
+		#menu li:nth-child(3):active 
+  		& ~ .slider {
+    	left: 50%;
+   		 background-color: #e67e22;
+  		}
+
+		
+		#menu ul ul {     
+			display:none;  
+			position:absolute;     
+		}  
+		#menu ul ul li {     
+
+			width:120px 
+		}  
+		#menu ul ul a {     
+			line-height:120%;     
+			padding:10px 15px;
+		}  
+		#menu ul li:hover > ul {     
+			display:block; 
+		} 
+		li {
+		  width: 215%;
+		  height: 100%;
+		  background-color: #e74c3c;
+		  transition: left .4s, background-color .4s;
+		}
+
+	</style>
+</head>
+<body>
+	
+	<nav id="menu">   
+		<ul>     
+			<li>
+				<a href="#">Enlace 1</a>
+			</li>     
+			<li>
+				<a href="#">Enlace 2</a>      
+				<ul>       
+					<li>
+						<a href="#">Enlace 2.1</a>
+					</li>    
+					<li>
+						<a href="#">Enlace 2.2</a>
+					</li>       
+					<li>
+						<a href="#">Enlace 2.3</a>
+					</li>      
+				</ul>     
+			</li>     
+			<li>
+				<a href="#">Enlace 3</a>
+			</li>     
+			<li>
+				<a href="#">Enlace 4</a>
+			</li>     
+			<li>
+				<a href="#">Enlace 5</a>
+			</li>   
+		</ul>  
+	</nav> 
+
+</body>
+</html>

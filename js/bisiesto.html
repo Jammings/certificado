@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Año Bisiesto</title>
+    <script>
+        
+        var year = parseInt(prompt("Introduce un año:"));
+
+        
+        if (year % 400 == 0 ) {
+           window.alert("El año es BISIESTO");
+        
+        }else if (year % 100 == 0 ) {
+            window.alert("El año NO es BISIESTO");
+        
+        }else if (year % 4 == 0 ) {
+            window.alert("El año es BISIESTO");
+        
+        }else{
+            window.alert("El año NO es BISIESTO")
+        }
+       
+             
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

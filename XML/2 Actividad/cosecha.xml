@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+
+<cosecha>
+        <tabla_siembra temporada="Otoño - Invierno">
+              <producto>Lechuga mantecosa</producto>
+              <parcela>2</parcela>
+              <unidades_plantadas semillasUsadas="30 " tipo="unidades">14</unidades_plantadas>
+              <fecha_siembra>3-11-14</fecha_siembra>
+              <fecha_recogida diasHastaRecogida="70">12-1-15</fecha_recogida>
+        </tabla_siembra>
+</cosecha>

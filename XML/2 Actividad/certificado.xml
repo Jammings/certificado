@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<certificado>
+        <nombre codigo="IFCD0110">Certificado de Confección y Publicación de Páginas Web</nombre>
+        <entidad_formacion>Adr Formación</entidad_formacion>
+        <profesor>
+            <nombre_prof dni="16854320Ñ">Cid</nombre_prof>
+            <titulacion>Ing. Informatico</titulacion>
+        </profesor>
+    <alumno>
+            <nombre_alumno dni="17856312Ñ">José</nombre_alumno>
+            <apellido posicion="primero">Luttor</apellido>
+            <apellido posicion="segundo">Stark</apellido>
+            <direccion> 
+                  <nombre via="Calle">Belchite</nombre>
+                  <numero>1</numero>
+                  <cp>26001</cp>
+            </direccion>
+    
+    </alumno>
+
+
+</certificado>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style>
+		
+		#contenedor {
+			width: 100%;
+		}
+
+		#contenedor .div1, .div2, .div3 {
+			width: 150px;
+			height: 150px;
+			background-color: red;
+			border-radius: 20px;
+			margin: 50px;
+		}
+
+		.div2 {
+			background-color: blue;
+		}
+		.div3 {
+			background-color: green;
+		}
+
+		.animacion {
+			animation-name: animacionMovimiento;
+			animation-duration: 7s;
+			animation-iteration-count: infinite;
+			position: absolute;
+		}
+
+		@keyframes animacionMovimiento {
+			0%, 100% {
+				right:0%;
+				/*transform: translateX(700%);*/
+			}
+
+			50%{
+				right:80%;
+			}
+
+			75% {
+				transform: rotate(45deg);
+			}
+			85% {
+				transform: rotate(185deg);
+			}
+		}
+
+
+		.animacion2 {
+			animation-name: animacionMovimiento2;
+			animation-duration: 7s;
+			animation-iteration-count: infinite;
+			position: absolute;
+		}
+
+		@keyframes animacionMovimiento2 {
+			0%, 100% {
+				top: 20%;
+				left:0%;
+				/*transform: translateX(700%);*/
+			}
+
+			50%{
+				left:80%;
+			}
+
+			75% {
+				transform: rotate(45deg);
+			}
+			85% {
+				transform: rotate(185deg);
+			}
+		}
+
+		.animacion3 {
+			animation-name: animacionMovimiento3;
+			animation-duration: 7s;
+			animation-iteration-count: infinite;
+			position: absolute;
+		}
+
+		@keyframes animacionMovimiento3 {
+			0%, 100% {
+				top: 40%;
+				right:0%;
+				/*transform: translateX(700%);*/
+			}
+
+			50%{
+				right:80%;
+			}
+
+			75% {
+				transform: rotate(45deg);
+			}
+			85% {
+				transform: rotate(185deg);
+			}
+		}
+
+
+	</style>
+</head>
+<body>
+	<div id="contenedor">
+			<div class="animacion div1"></div>
+			<div class="animacion2 div2"></div>
+			<div class="animacion3 div3"></div>
+	</div>
+
+
+</body>
+</html>

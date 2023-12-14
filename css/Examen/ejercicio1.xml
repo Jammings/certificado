@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<videoclub>
+    <locales>
+              <local numero="2">
+                          <direccion>
+                                <nombre via="Calle">Belchite</nombre>
+                                 <numero>1</numero>
+                                 <cp>26001</cp>
+                                 <localidad>Logroño</localidad>
+                                 <comunidad>La Rioja</comunidad>
+                          </direccion>
+                          <peliculas>
+                              <nombre>El Padrino</nombre>
+                              <genero>Drama</genero>
+                              <num_copias>10</num_copias>
+                              <formato>DVD</formato>
+                          </peliculas>
+              </local>
+               <local numero="3">
+                          <direccion>
+                                <nombre via="Avenida">La Paz</nombre>
+                                 <numero>55</numero>
+                                 <cp>26003</cp>
+                                 <localidad>Logroño</localidad>
+                                 <comunidad>La Rioja</comunidad>
+                          </direccion>
+                          <peliculas>
+                              <nombre>Scarface</nombre>
+                              <genero>Drama</genero>
+                              <num_copias>7</num_copias>
+                              <formato>DVD</formato>
+                          </peliculas>
+              </local>
+ 
+  </locales>
+</videoclub>

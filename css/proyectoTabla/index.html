@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="widtd=device-widtd, initial-scale=1">
+	<title>Prueba</title>
+	<style type="text/css">
+		body{
+			background-color: #cff33c;
+			font-family: Times New Roman;
+		}
+		h1{
+			font-size: 80px;
+			text-align: center;
+			color: blue;
+		}
+		
+
+		table{
+			font-size: 25px;
+			text-align: center;
+			background-color: #4E4E4E;
+			margin: auto;
+			color: black;
+			width: 100%;
+		}
+
+		.table2 {
+			font-size: 25px;
+			text-align: center;
+			background-color: white;
+			margin: auto;
+			color: black;
+			width: 100%;
+		}
+
+		.columna1{
+			background-color: white ;
+			color: black;
+			border: 1px solid white;
+			border-radius: 40px 0 40px 0;
+		}
+
+
+		.tr1{
+			border: 15px solid #8E8E8E;
+			border-radius: 30px;
+			font-size: 20px;
+		}
+
+		.tr1 td{
+			border: 1px solid white;
+			border-radius: 30px;
+			color: white;
+		}
+		.tr2 td{
+			border: 1px solid black;
+			border-radius: 30px;
+			color: black;
+		}
+
+		td{
+			font-size: 22px;
+		}
+
+
+		th{
+			background-color: grey;
+			color: black;
+			border: 1px solid white;
+			border-radius: 20px 0 20px 0;
+		}
+
+		.tercera {
+			text-align: right;
+			background-color: #959595;
+		}
+
+		.tercera1 {
+			text-align: right;
+		}
+
+		.tercera2 {
+			text-align: right;
+			background-color: #878787 ;
+		}
+		div {
+			padding-top: 90px;
+		}
+
+		.columna2{
+			background-color: #4E4E4E ;
+			color: white;
+			border: 1px solid white;
+			border-radius: 40px 0 40px 0;
+		}
+
+		.primeraFila{
+			text-align: left;
+		}
+
+	</style>
+</head>
+<body>
+	<h1>Esta tabla clavada</h1>
+	<table>
+		<tr>
+			<th class="columna1">Nombre</th>
+			<th class="columna1">Edad</th>
+			<th class="columna1">Teléfono</th>
+		</tr>
+		<tr class="tr1">
+			<td class="primeraFila">Esto es contenido</td>
+			<td>Esto es contenido</td>
+			<td class="tercera1">Esto es contenido</td>
+		</tr>
+		<tr class="tr1">
+			<td colspan="2">Esto es contenido</td>
+			<td class="tercera" rowspan="4">Esto es contenido</td>
+		</tr>
+		<tr class="tr1">
+			<td class="primeraFila">Esto es contenido</td>
+			<td>Esto es contenido</td>
+		</tr>
+		<tr class="tr1">
+			<td class="primeraFila">Esto es contenido</td>
+			<td>Esto es contenido</td>
+			
+		</tr>
+		<tr class="tr1">
+			<td class="primeraFila">Esto es contenido</td>
+			<td>Esto es contenido</td>
+		</tr>
+
+	</table>
+
+	<div>
+	<table class="table2">
+		<tr>
+			<th class="columna2">Nombre</th>
+			<th class="columna2">Edad</th>
+			<th class="columna2">Teléfono</th>
+		</tr>
+		<tr class="tr2">
+			<td class="primeraFila">Esto es contenido</td>
+			<td>Esto es contenido</td>
+			<td class="tercera1">Esto es contenido</td>
+		</tr>
+		<tr class="tr2">
+			<td colspan="2">Esto es contenido</td>
+			<td class="tercera2" rowspan="4">Esto es contenido</td>
+		</tr>
+		<tr class="tr2">
+			<td class="primeraFila">Esto es contenido</td>
+			<td>Esto es contenido</td>
+		</tr>
+		<tr class="tr2">
+			<td class="primeraFila">Esto es contenido</td>
+			<td>Esto es contenido</td>
+			
+		</tr>
+		<tr class="tr2">
+			<td class="primeraFila">Esto es contenido</td>
+			<td>Esto es contenido</td>
+		</tr>
+
+	</table>
+	</div>
+
+
+
+
+
+
+
+</body>
+</html>

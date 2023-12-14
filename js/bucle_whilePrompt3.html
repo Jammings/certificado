@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bucle While + Prompt</title>
+
+    <center>
+    <script>
+
+        var final = parseInt(prompt("Introduce un número:"));
+        var contar = 0;
+        
+        if(final >= 0){
+            while(contar <= final){
+              document.write("<br>" + contar );
+              contar = contar + 1;
+            } 
+      } else {
+            while(contar >= final){
+              document.write("<br>" + contar );
+              contar = contar - 1;
+            } 
+      }
+    
+   </script>
+ </center>
+   
+  </head>
+  <body></body>
+</html>

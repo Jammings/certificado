@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Divisas</title>
+
+    <script>
+      var texto = "\n euro \n dolar \n peseta \n"
+      var origen = prompt("Introduce la moneda de ORIGEN:" + texto);
+      var destino = prompt("Introduce la moneda de DESTINO:" + texto);
+      var cantidad = parseFloat(prompt("Introduce la cantidad a convertir"));
+
+      if (origen == "dolar") {
+          window.alert(0.93 * cantidad);
+        } else if (destino == "peseta") {
+          window.alert(154 * cantidad);
+        } else if (origen == "euro") {
+          window.alert(1.07 * cantidad);
+        } else if (destino == "peseta") {
+          window.alert(166.39 * cantidad);
+        } else if (origen == "peseta") {
+           window.alert(0.006 * cantidad);
+        } else if (destino == "dolar") {
+          window.alert(0.0065 * cantidad);
+        } else {
+        window.alert("Moneda de origen no reconocida");
+      }
+    
+  
+   </script>
+  </head>
+  <body></body>
+</html>

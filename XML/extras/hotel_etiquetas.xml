@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<hotel>
+             <cliente dni="16854320Ñ" nombre="Juan Oracio Lamas">
+                 <domicilio via="Calle" nombreCalle="Belchite" numero="2"></domicilio>
+                 <movil></movil>
+                 <habitacion numeroHabitacion="1" sqm="30" tipoHabitacion="Básica" huespedes="2">
+                          <extras>
+                              <extra></extra>
+                              <extra></extra>
+                              <extra></extra>
+                         </extras>
+                 </habitacion>
+             
+             
+             </cliente>
+
+</hotel>

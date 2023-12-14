@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<hotel>
+             <cliente>
+                 <dni></dni>
+                 <nombre></nombre>
+                 <domicilio></domicilio>
+                 <movil></movil>
+                 <habitacion>
+                    <numeroHabitacion></numeroHabitacion>
+                    <sqm></sqm>
+                    <tipoHabitacion></tipoHabitacion>
+                    <cantidadHuespedes></cantidadHuespedes>
+                          <extras>
+                              <extra></extra>
+                              <extra></extra>
+                              <extra></extra>
+                         </extras>
+                 </habitacion>
+             
+             
+             </cliente>
+
+</hotel>

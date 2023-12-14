@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<gastos>
+          <gasto identificador="2">     
+                  <mes>Enero</mes>
+                  <categoria>Transporte</categoria>
+                  <cantidad moneda="Euros" >74.00 €</cantidad>
+          </gasto> 
+</gastos>

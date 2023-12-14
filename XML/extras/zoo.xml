@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<zoo>
+      
+      <animales>
+        <especie tipo="tipo de especie">Formicidae</especie>
+        <nombre cientifico="Messor Barbarus">Hormiga</nombre>
+        <edad medida="años">3</edad>
+      </animales>
+
+</zoo>

@@ -1,0 +1,200 @@
+<html>
+    <head>
+        <script>
+            
+            var texto = "\n dolar \n euro \n peseta";
+
+            var cantidad = parseFloat(prompt("Cuanto dinero necesitas"));
+            var origen = prompt("Que moneda tienes "+texto);
+            var destino = prompt("Que moneda deseas "+ texto);
+/*---------------------------------------------------------------------*/
+/*-------------------------------VERSION 1-----------------------------*/
+           if(origen=="dolar"){
+                if(destino=="euro"){
+                    window.alert(0.93*cantidad);
+                }else if(destino=="peseta"){
+                    window.alert(154*cantidad);
+                }else{
+                    window.alert("No puedo hacer ese cambio");
+                }
+           }else if(origen=="euro"){
+            if(destino=="dolar"){
+                    window.alert(1.1*cantidad);
+                }else if(destino=="peseta"){
+                    window.alert(166*cantidad);
+                }else{
+                    window.alert("No puedo hacer ese cambio");
+                }
+           }else if(origen=="peseta"){
+                if(destino=="euro"){
+                    window.alert(0.0005*cantidad);
+                }else if(destino=="peseta"){
+                    window.alert(0.004*cantidad);
+                }else{
+                    window.alert("No puedo hacer ese cambio");
+                }
+           }else{
+                window.alert("No puedo hacer ese cambio");
+           }
+         
+/*----------------------------------------------------------*/
+/*-------------------------------VERSION 2-----------------------------*/
+           if(origen=="dolar"){
+                if(destino=="euro"){
+                    window.alert(0.93*cantidad);
+                }
+                if(destino=="peseta"){
+                    window.alert(154*cantidad);
+                }
+           }
+           if(origen=="euro"){
+                if(destino=="dolar"){
+                    window.alert(1.1*cantidad);
+                }
+                if(destino=="peseta"){
+                    window.alert(166*cantidad);
+                }
+           }
+           if(origen=="peseta"){
+                if(destino=="euro"){
+                    window.alert(0.0005*cantidad);
+                }
+                if(destino=="peseta"){
+                    window.alert(0.004*cantidad);
+                }                
+           }                
+         
+           if((origen!="peseta")&&(origen!="euro")&&(origen!="dolar")){
+                window.alert("No puedo hacer ese cambio");
+           }
+           if((destino!="peseta")&&(destino!="euro")&&(destino!="dolar")){
+                window.alert("No puedo hacer ese cambio");
+            }
+
+/*----------------------------------------------------------------*/
+/*-------------------------------VERSION 3-----------------------------*/
+            if(origen=="dolar"){
+                if(destino=="euro"){
+                    window.alert(0.93*cantidad);
+                }else if(destino=="peseta"){
+                    window.alert(154*cantidad);
+                }
+           }else if(origen=="euro"){
+            if(destino=="dolar"){
+                    window.alert(1.1*cantidad);
+                }else if(destino=="peseta"){
+                    window.alert(166*cantidad);
+                }
+           }else if(origen=="peseta"){
+                if(destino=="euro"){
+                    window.alert(0.0005*cantidad);
+                }else if(destino=="peseta"){
+                    window.alert(0.004*cantidad);
+                }
+           }else{
+                window.alert("No puedo hacer ese cambio");
+           }
+           if((destino!="peseta")&&(destino!="euro")&&(destino!="dolar")){
+                window.alert("No puedo hacer ese cambio");
+            }
+/*------------------------------------------------------------------*/
+/*-------------------------------VERSION 4-----------------------------*/
+
+    switch(origen){
+        case "dolar":
+            
+            switch(destino){
+                case "euro":
+                    window.alert(0.93*cantidad);
+                break;
+                case "peseta":
+                    window.alert(34*cantidad);
+                break;
+                default:
+                    window.alert("No puedo hacer ese cambio");
+            }
+
+
+        break;
+        case "euro":
+            switch(destino){
+                case "dolar":
+                    window.alert(0.93*cantidad);
+                break;
+                case "peseta":
+                    window.alert(34*cantidad);
+                break;
+                default:
+                    window.alert("No puedo hacer ese cambio");
+            }
+        break;
+        case "peseta":
+            switch(destino){
+                case "euro":
+                    window.alert(0.93*cantidad);
+                break;
+                case "dolar":
+                    window.alert(34*cantidad);
+                break;
+                default:
+                    window.alert("No puedo hacer ese cambio");
+            }
+        break;
+        default:
+            window.alert("No puedo hacer ese cambio");
+    }
+/*------------------------------------------------------------------*/
+/*-------------------------------VERSION 5-----------------------------*/
+            if((origen=="dolar")&&(destino=="euro")){          
+                window.alert(2*cantidad);               
+            }
+            if((origen=="dolar")&&(destino=="peseta")){          
+                window.alert(3*cantidad);               
+            }
+            if((origen=="euro")&&(destino=="dolar")){          
+                window.alert(4*cantidad);               
+            }
+            if((origen=="euro")&&(destino=="peseta")){          
+                window.alert(5*cantidad);               
+            }
+            if((origen=="peseta")&&(destino=="euro")){          
+                window.alert(6*cantidad);               
+            }
+            if((origen=="peseta")&&(destino=="dolar")){          
+                window.alert(7*cantidad);               
+            }           
+            if((destino!="peseta")&&(destino!="euro")&&(destino!="dolar")){
+                window.alert("No puedo hacer ese cambio");
+            } 
+            if((origen!="peseta")&&(origen!="euro")&&(origen!="dolar")){
+                window.alert("No puedo hacer ese cambio");
+            }  
+/*------------------------------------------------------------------*/
+/*-------------------------------VERSION 6-----------------------------*/
+            if((origen=="dolar")&&(destino=="euro")){          
+                window.alert(2*cantidad);               
+            }
+            else if((origen=="dolar")&&(destino=="peseta")){          
+                window.alert(3*cantidad);               
+            }
+            else if((origen=="euro")&&(destino=="dolar")){          
+                window.alert(4*cantidad);               
+            }
+            else if((origen=="euro")&&(destino=="peseta")){          
+                window.alert(5*cantidad);               
+            }
+            else if((origen=="peseta")&&(destino=="euro")){          
+                window.alert(6*cantidad);               
+            }
+            else if((origen=="peseta")&&(destino=="dolar")){          
+                window.alert(7*cantidad);               
+            }           
+            else{
+                window.alert("No puedo hacer ese cambio");
+            }    
+       </script>
+    </head>
+    <body>
+
+    </body>
+</html>

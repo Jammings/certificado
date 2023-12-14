@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<grupo>
+
+<persona>
+
+      <nombre>Ricardo</nombre>
+
+      <apellidos>Laurens Lara</apellidos>
+
+      <direccion>
+          
+          <calle>C/ Belchite</calle>
+          <numero>22</numero>
+          <localidad>Logroño</localidad>
+      
+      </direccion>
+
+      <telefono>658229672</telefono>
+
+</persona>     
+<persona>
+
+      <nombre>José</nombre>
+
+      <apellidos>Ortega</apellidos>
+
+      <direccion>
+          
+          <calle>C/ Sagasta</calle>
+          <numero>15</numero>
+          <localidad>Logroño</localidad>
+      
+      </direccion>
+
+      <telefono>6581316511</telefono>
+
+</persona>     
+
+
+
+
+
+
+
+
+
+</grupo>                                                                                                                                                                                                                                                                                                                                                                         

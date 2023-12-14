@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+
+<ordenadores>
+  
+  <ordenador1>
+    <puesto> 1 </puesto>
+    <aula> 01 </aula>
+    <modelo> HP 8AA1 </modelo>
+    <caracteristicas>
+    <velocidad> 12th Gen Intel Core i7-1255U </velocidad>
+    <memoria> 953 GB </memoria>
+    </caracteristicas>
+    </ordenador1>  
+  
+  <ordenador1>  
+  <puesto> 2 </puesto>
+  <aula> 01 </aula>
+  <modelo> HP 8AA1 </modelo>
+  <caracteristicas>
+    <velocidad> 12th Gen Intel Core i7-1255U </velocidad>
+    <memoria> 953 GB </memoria>
+  </caracteristicas>
+  </ordenador1>  
+
+</ordenadores>

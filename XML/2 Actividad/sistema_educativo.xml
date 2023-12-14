@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<sistemaEducativo>
+    <etapas>
+        <eduInfantil tipo="Educación Infantil" edades="0-6 años" voluntaria="Sí">
+            <ciclos>
+                <ciclo nombre="Primer Ciclo" edades="0-3 años" ubicacion="Escuelas infantiles" />
+                <ciclo nombre="Segundo Ciclo" edades="3-6 años" ubicacion="Centros de educación infantil y primaria" />
+            </ciclos>
+            <descripcion>
+                Esta etapa educativa tiene como finalidad contribuir al desarrollo cognitivo, físico, social, afectivo y moral de los niños y niñas.
+            </descripcion>
+        </eduInfantil>
+        <eduPrimaria tipo="Educación Primaria" edades="6-12 años" obligatoria="Sí" gratuita="Sí">
+            <ciclos>
+                <ciclo nombre="Ciclo Inicial" edades="6-8 años" />
+                <ciclo nombre="Ciclo Medio" edades="8-10 años" />
+                <ciclo nombre="Ciclo Superior" edades="10-12 años" />
+            </ciclos>
+            <descripcion>
+                Su objetivo es fomentar en los niños y niñas el desarrollo de diferentes capacidades, tales
+                como la expresión y comprensión oral y la socialización, para su progresiva autonomía.
+            </descripcion>
+        </eduPrimaria>
+        <educacionSecundaria tipo="ESO" edades="12-18 años" obligatoria="Sí" gratuita="Sí">
+            <descripcion>
+                Se pretende que los alumnos conozcan los elementos básicos de la cultura,
+                desarrollen hábitos de estudio y de trabajo y adquieran un pensamiento crítico.
+                Tras esta etapa se puede, o bien cursar estudios tanto de Bachillerato como de Formación
+                Profesional de grado medio, o bien acceder al mercado de trabajo.
+            </descripcion>
+        </educacionSecundaria>
+        <bachillerato tipo="Bachillerato" edades="16-18 años">
+            <modalidades>
+                <modalidad>Ciencias y Tecnología</modalidad>
+                <modalidad>Humanidades y Ciencias Sociales</modalidad>
+                <modalidad>General</modalidad>
+            </modalidades>
+            <descripcion>
+                El Bachillerato pertenece a la educación secundaria postobligatoria,
+                La finalidad principal de estos estudios es capacitar a los alumnos para acceder a la educación superior.
+            </descripcion>
+        </bachillerato>
+        <formacionProfesional tipo="Formación Profesional (FP)">
+            <niveles>
+                <nivel nombre="FP básica">
+                    <descripcion>La FP básica se dirige a aquellos alumnos que no han finalizado la ESO y desean continuar con sus estudios en el ámbito 
+                    de la Formación Profesional.</descripcion>
+                </nivel>
+                <nivel nombre="Ciclos formativos de grado medio" duracion="2 años">
+                    <descripcion>Forman parte de la educación secundaria postobligatoria, permitiendo obtener el título de Técnico y acceder a ciclos formativos de grado superior.</descripcion>
+                </nivel>
+                <nivel nombre="Ciclos formativos de grado superior" duracion="2 años">
+                    <descripcion>Permiten obtener el título de Técnico Superior, además de poder acceder a estudios universitarios.</descripcion>
+                </nivel>
+            </niveles>
+        </formacionProfesional>
+    </etapas>
+</sistemaEducativo>

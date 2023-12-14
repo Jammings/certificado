@@ -1,0 +1,80 @@
+<html>
+	<head>
+		<style type="text/css">
+			/*VERSION GENERALISTA*/
+			#hamburguesa{
+				display: none;
+			}
+			nav input{
+				display: none;	
+
+			}
+			nav ul{
+				overflow: hidden;
+				position: relative;
+				background-color: grey;
+				padding-top: 3%;
+				padding-bottom: 3%;
+			}
+			nav ul li{
+				float: left;
+				width: 19%;
+				background-color: red;
+				color: white;
+				list-style: none;
+				margin: 10px;
+				text-align: center;
+				padding: 2%;
+				font-size: 30px;				
+			}
+
+			nav ul li:hover{
+				background-color: darkred;
+			}
+
+			@media (max-width:1100px){
+			#hamburguesa{
+				display: block;
+				color: white;
+				background-color: darkred;
+				width: 30px;
+				height: 34px;
+				font-size: 23px;
+				text-align: center;
+				border-radius: 3px;
+			}
+			nav input{
+				display: block;	
+				position: absolute;
+				width:22px;
+				height: 28px;
+				top: 8px;
+				opacity: 0;
+			}
+			nav ul li{				
+				width: 89%;				
+			}
+			nav ul{
+				display: none;
+			}
+			nav input:checked+ul{
+				display: block;	
+			}
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+			<nav>
+				<div id="hamburguesa">☰</div>
+				<input type="checkbox"/>				
+				<ul>
+					<li>Uno</li>
+					<li>Dos</li>
+					<li>Tres</li>
+					<li>Cuatro</li>
+				</ul>
+			</nav>
+		</header>
+	</body>
+</html>

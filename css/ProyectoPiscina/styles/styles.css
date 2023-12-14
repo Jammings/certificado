@@ -1,0 +1,111 @@
+  
+  @import url('https://fonts.googleapis.com/css2?family=Vina+Sans&display=swap');
+
+
+  	body{
+  	background-image: url('../images/arena.jpg'); 
+ 		background-size: cover;
+		background-repeat: no-repeat; 
+
+ 	}
+    
+
+    input {
+      display: none;     
+  	}
+
+    .contenedor {
+      display: flex;
+      align-items: flex-start;
+    }
+
+    .cuadro {
+      position: relative;
+    }
+
+    .imagen {
+      width: 100%;
+      height: auto;
+      max-width: 300px;
+      display: none;     
+  	}
+
+     .pool {
+      width: 530px;
+      height: auto;
+      position: fixed;
+      top: 24%;
+      right: 34%;
+    }
+
+      .bubble {
+      width: 220px;
+      height: 300px;
+      position: fixed;
+      top: 30%;
+      right: 42%;
+      opacity: 0.6;
+    }
+
+    #boton1:checked ~ .imagenes .imagen1,
+    #boton2:checked ~ .imagenes .imagen2,
+    #boton3:checked ~ .imagenes .imagen3 {
+      display: block;
+    }
+
+    .botones {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      position: fixed;
+      top: 28%;
+      left: 28%;
+    }
+
+    .imagenes {
+      position: fixed;
+      top: 25%;
+      right: 40%;
+    }
+
+    label {
+      cursor: pointer;
+      margin-bottom: 50px; 
+      width: 140px;
+      text-align: center;
+      background-color: #D4629F;
+      font-family: 'Vina Sans', sans-serif;
+      color: #fff;
+  	  position:relative;
+  	  font-size:30px;
+  	  padding: 15px;
+  	  transition:800ms ease all;
+  	  outline:none;
+  	  border: 2px solid white;
+
+    }
+
+  	label:hover{
+  	  background:#fff;
+  	  color:#D4629F;
+  	}
+  	label:before,label:after{
+  	  content:'';
+  	  position:absolute;
+  	  top:0;
+  	  right:0;
+  	  height:2px;
+  	  width:0;
+  	  background: #D4629F;
+  	  transition:400ms ease all;
+  	}
+  	label:after{
+  	  right:inherit;
+  	  top:inherit;
+  	  left:0;
+  	  bottom:0;
+  	}
+  	label:hover:before,label:hover:after{
+  	  width:100%;
+  	  transition:800ms ease all;
+  	}

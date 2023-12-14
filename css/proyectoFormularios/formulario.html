@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+
+		.all {
+			display: flex;
+			justify-content: center;
+			overflow: hidden;
+
+		}
+
+		.formulario {
+			padding-top: 100px;
+			display: flex;
+			justify-content: center;
+			width: 20%;
+			flex-direction: column-reverse;
+
+		}
+
+		input, span {
+			position: relative;
+			display: flex;
+			width: 70%;
+			padding-top: 5px;
+			margin: 10px;
+			font-family: arial;
+			color: white;
+		}
+
+		input {
+			 text-align: center;
+			 border-radius: 5px;
+			 font-size: 16px;
+			 padding: 10px;
+			 border: 1px solid rgba(10, 180, 180, 1);
+			 border-top: none;
+			 border-left: none;
+			 border-right: none;
+			 background: rgba(20, 20, 20, .2);
+			 color: white;
+			 outline: none;
+		}
+		input:hover {
+			background-color: rgba(10, 180, 180, 0.4);
+
+		}
+
+		#submit {
+			border: 1px solid rgba(10, 180, 180, 1);
+			background: rgba(20, 20, 20, .6);
+			font-size: 18px;
+			color: white;
+			margin: 20px;
+			padding: 10px 50px;
+			cursor: pointer;
+			transition: .4s;
+			justify-content: center;
+		}
+
+		#submit:hover {
+			background-color: rgba(10, 180, 180, 0.7);
+    		justify-content: center;
+    		transition: .7s;
+		}
+
+		form{
+			width:300px;
+			padding:16px;
+			border-radius:10px;
+			background-color:#ccc;
+			padding-left: 75px;
+			background-image: url(https://t4.ftcdn.net/jpg/04/90/18/61/360_F_490186148_vUtVy6nI4J4fetFG39rAY4N7zQQQ7UxY.jpg);
+			box-shadow: 0 50px 70px -20px rgba(0, 0, 0, 0.85);
+
+		}
+
+		#date::-webkit-calendar-picker-indicator {
+ 		 filter: invert(1);
+		}
+
+
+
+	</style>
+</head>
+<body>
+		<div class="all">
+			<div class="formulario">
+				<form>
+					<span>NOMBRE: </span><input type="text" placeholder="Nombre" name="nombre" action="#" method="post" required />
+					<span>EDAD: </span><input type="number" name="edad"/>
+					<span>FECHA DE NACIMIENTO: </span><input id="date" type="date" name="fecha" value="2012-01-12"/>
+					<span>DNI: </span><input type="text" name="dni"/>
+					<span>DIRECCIÓN: </span><input type="text" name="direccion"/>
+					<span>NACIONALIDAD: </span><input type="text" name="nacionalidad"/>
+					<span>TELÉFONO: </span><input type="number" name="telefono"/>
+					<span>EMAIL: </span><input type="email" name="email"/>
+					<input id="submit" type="submit" value="Enviar datos"/>
+				</form>
+			</div>
+		</div>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<html>
+	<head>
+		<style type="text/css">
+			
+			.dos_columnas{
+				position: relative;
+				overflow: hidden;
+				width: 60%;
+			}
+			.dos_columnas div{
+				float: left;
+				width: 48%;
+			}
+			.central{
+				display: flex;
+				justify-content: center;
+			}
+			section>div{
+				visibility: hidden;
+			}
+			h2:active{
+				background-color: red;
+				color: black;
+			}
+			h2:hover{
+				cursor: pointer;
+			}
+			h2:active+div{
+				visibility: inherit;
+			}
+			h2{
+				width: 300px;
+				background-color: blue;
+				border: 2px solid black;
+				text-align: center;
+				color: white;
+			}
+			
+
+		</style>
+	</head>
+	<body>
+		
+		<section>
+			<h2>Pincha</h2>
+			<div>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				</p>
+			</div>
+		</section>
+		<section>
+			<h2>Pincha</h2>
+			<div>
+				<img src="foto1.jpg"/>
+				<img src="foto1.jpg"/>
+				<img src="foto1.jpg"/>
+			</div>
+		</section>
+		<section>
+			<h2>Pincha</h2>
+			<div class="central">
+				<div class="dos_columnas">
+					<div>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					</div>
+					<div>
+						<img src="foto1.jpg"/>
+					</div>
+				</div>
+			</div>
+		</section>
+
+	</body>
+
+
+</html>

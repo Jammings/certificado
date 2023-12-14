@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario Profesional</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-top: 150px;
+    }
+
+    form {
+      background-color: rgba(255, 255, 255, 0.9);
+      border-radius: 10px;
+      padding: 30px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      max-width: 400px;
+      width: 100%;
+      text-align: center;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 20px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      box-sizing: border-box;
+    }
+
+    input[type="file"] {
+      border: none;
+      background-color: #dceddcb0;
+      cursor: pointer;
+      height: 60px;
+      padding: 5px;
+      opacity: 0px;
+      cursor: pointer;
+    }
+
+    .upload {
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+    }
+
+    .upload input[type=file] {
+      font-size: 0px;
+      position: absolute;
+      width: 250px;
+      left: 20%;
+      top: 3%;
+      opacity: 0;
+
+    }
+
+    .upload .btn {
+      border: 2px solid #bbbbbb;
+      color: #bbbbbb;
+      background-color: #dceddcb0;
+      border-radius: 8px;
+      font-size: 20px;
+      font-weight: bold;
+      padding: 8px 20px;
+      transition: all 0.2s;
+      margin: 25px 0px 25px 0px;
+    }
+
+    .upload .btn:hover {
+      border-color: #27AA9D;
+      color: #27AA9D;
+    }
+
+    textarea {
+      resize: vertical;
+      margin-top: 10px;
+      text-align: center;
+      resize: none;
+    }
+
+    input[type="submit"] {
+      background-color: #4caf50;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #27AA9D;
+    }
+
+    input {
+      margin-top: 15px;
+    }
+    
+    span {
+      padding-top: 10px;
+      display: flex;
+      justify-content: center;
+    }
+
+    *:focus {
+      border: 3px solid #a9e5ab;
+      outline: none;
+    }
+
+  </style>
+</head>
+<body>
+  <form action="#" method="post" target="_blank">
+    <span>Sube el archivo que deseas imprimir</span>
+    <div class="upload">
+      <button class="btn">Seleccionar Archivo</button>
+      <input type="file" name="file">
+    </div>
+    <span>Comentarios</span>
+    <textarea rows="4" name="message" placeholder="Ingresa un comentario"></textarea>
+    <span>Código hexadecimal de color</span>
+    <input type="text" pattern="#[0-9A-Fa-f]{3}" name="text" minlength="3" maxlength="9" title="Ejemplo: #27AA9D">
+    <span>Cantidad</span>
+    <input type="number" name="number" min="3" max="6">
+    <input type='submit' value='Enviar'>
+  </form>
+</body>
+</html>

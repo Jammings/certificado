@@ -1,0 +1,131 @@
+	html {
+  		height: 100%;
+	}
+	
+
+
+	body{
+		background: linear-gradient(to bottom, #a5fecb 0%,#20bdff 50%,#3273ff 100%);
+		background-repeat: no-repeat;
+		background-size: cover;
+		height: 100%;
+
+
+	}	
+
+	.contenedor {
+		background-color: #5581A5;
+		color: #FFFFFF;
+		font-size: 35px;
+		position: relative;
+		overflow: hidden;
+		border-radius: 20px;
+		padding: 7px;
+	}
+
+	div .menu{
+		width: 19%;
+		float:left;
+		text-align: center;
+		border-radius: 35px;
+		margin: 3px;
+
+	}
+
+	.menu {
+		background-color: #5581A5;
+
+	}
+	.menu:hover {
+		background-color: #00C9C9;
+		cursor:pointer ;
+		
+	}
+
+	.here{
+		background: linear-gradient(to right, #00c9ff, #92fe9d);
+	}
+
+	a {
+		text-decoration: none;
+		color:white;
+	}
+
+	
+	.galeria {
+		cursor: pointer;
+
+	}
+
+	.galeria div {
+		position: relative;
+		display: flex;
+  		justify-content: center;
+  		align-items: center;
+	}
+
+	img {
+		margin: 5px;
+	}
+
+	table{
+		font-size: 25px;
+		text-align: center;
+		background-color: #5581A5;
+		margin: auto;
+		color: black;
+		width: 100%;
+	}
+
+	.columna1{
+		color: black;
+		border: 1px groove white;
+		background-color: #5581A5;
+	}
+
+	.tr1 td{
+			border: 1px solid white;
+
+	}
+	.tercera {
+		color: white;
+	}
+
+	.tercera1 {
+		background-color:white;		
+	}
+
+	.primeraFila{
+		text-align: center;
+		color: black;
+	}
+
+
+	.gallery {
+	 	width: 85vw;
+	  	height: 60vmin;
+	  	display: flex;
+	  	gap: 5px;
+	}
+
+	.gallery img {
+	  	height: 100%;
+	  	flex: 1;
+	  	-o-object-fit: cover;
+	     object-fit: cover;
+	  	overflow: hidden;
+	  	cursor: pointer;
+	 	border-radius: 10px;
+	  	transition: all 0.3s;
+	}
+
+	.gallery img:hover {
+	  	flex: 4;
+	}
+
+	.gallery-position {
+	 	display: flex;
+	  	justify-content: center;
+	  	padding-top: 10vh;
+	  	padding-bottom: 10vh;
+	}
