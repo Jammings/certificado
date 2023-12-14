@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cuadro Prompt</title>
+
+    <center>
+    <script>
+
+      var cantidad = parseInt(prompt("Introduce un número:"));
+      var simbolo = prompt("Introduce un carácter:");
+
+      var asterisco = " ";
+      var n = 0;
+      var k = 0;
+
+      while(k < cantidad){
+        n = 0;
+        while(n < cantidad ){
+            asterisco = asterisco + simbolo;
+            n = n + 1;
+        }
+        asterisco = asterisco + "\n"
+        k = k + 1;
+      }
+
+      window.alert(asterisco);
+
+
+   </script>
+ </center>
+   
+  </head>
+  <body></body>
+</html>
