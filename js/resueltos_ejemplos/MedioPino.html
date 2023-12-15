@@ -1,0 +1,34 @@
+<html> 
+    <head>
+        <meta charset="UTF-8"/>
+        <script>
+            var n=0;  
+            var k=0;
+            var cadena="";
+            var guion=4;
+            var asterisco = 1;
+            
+            while(k<5){
+
+                n=0;
+                while(n<guion){
+                    cadena = cadena+" ";
+                    n=n+1;
+                }
+                n=0;
+                while(n<asterisco){
+                    cadena = cadena+"*";
+                    n=n+1;
+                }
+                cadena = cadena+"\n";
+                k=k+1;
+                guion=guion-1;
+                asterisco=asterisco+1;
+                
+            }            
+            window.alert(cadena);
+        </script> 
+    </head>
+    <body></body>
+
+</html>
