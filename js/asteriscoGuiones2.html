@@ -10,59 +10,24 @@
         var n = 0;
         var k = 0;
         var cadena = " ";
+        var cadena2 = " ";
 
         while (n < 5) {
           cadena = cadena + " * ";
+          cadena2 = cadena2 + " - ";
           n = n + 1;
         }
-        cadena = cadena + "\n";
-        n = 0;
-            while (n < 1) {
-              k = 0;
-              while (k < 5) {
-                cadena = cadena + " - ";
+
+        var todo = cadena + "\n" + cadena2 + "\n";
+        var completo = " ";
+            
+        while (k < 3) {
+                completo = completo + todo;
                 k = k + 1;
               }
-              n = n + 1;
-              cadena = cadena + "\n";
-            }
-
-            n = 0;
-        while (n < 5) {
-          cadena = cadena + " * ";
-          n = n + 1;
-        }
-        cadena = cadena + "\n";
-        n = 0;
-              while (n < 1) {
-                k = 0;
-                while (k < 5) {
-                  cadena = cadena + " - ";
-                  k = k + 1;
-                }
-                n = n + 1;
-                cadena = cadena + "\n";
-              }
-        n = 0;
-        while (n < 5) {
-          cadena = cadena + " * ";
-          n = n + 1;
-        }
-              cadena = cadena + "\n";
-              n = 0;
-              while (n < 1) {
-                k = 0;
-                while (k < 5) {
-                  cadena = cadena + " - ";
-                  k = k + 1;
-                }
-                n = n + 1;
-                cadena = cadena + "\n";
-              }
-        n = 0;
-
-        
-        window.alert(cadena);
+            
+          
+        window.alert(completo);
       </script>
     </center>
   </head>
