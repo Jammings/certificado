@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Programacion Modular funciones</title>
+    <style>
+      button {
+        font-size: 20px;
+        background-color: rgb(7, 148, 7);
+        color: aliceblue;
+        border-radius: 10px;
+        padding: 10px;
+        box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.3);
+
+      }
+
+      button:active {
+        font-size: 20px;
+        background-color: rgb(23, 96, 23);
+        color: aliceblue;
+        border-radius: 10px;
+        padding: 10px;
+        box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.3);
+      }
+      div {
+        margin-top: 80px;
+      }
+
+      #resultado {
+        color: red;
+        font-size: 35px;
+      }
+
+    </style>
+    
+      <script>
+
+          var numero1;
+          var numero2;
+          
+        
+          function pedir(){
+              numero1 = parseFloat(prompt("Introduce un número:"));
+              numero2 = parseFloat(prompt("Introduce otro número:"));
+          }
+         
+         
+         function sumar(){
+              pedir();
+              document.getElementById("resultado").innerHTML=("Sumaremos "+ numero1 + ' + '  + numero2 + ' = ' + (numero1 + numero2));
+            }
+
+         function restar(){
+              pedir();  
+              document.getElementById("resultado").innerHTML=("Restaremos "+ numero1 + ' - '  + numero2 + ' = ' + (numero1 - numero2));
+            }
+                        
+         function multiplicar(){
+              pedir();
+              document.getElementById("resultado").innerHTML=("Multiplicaremos "+ numero1 + ' * '  + numero2 + ' = ' + (numero1 * numero2));
+            }
+
+         function dividir(){
+              pedir();
+              document.getElementById("resultado").innerHTML=("Dividiremos "+ numero1 + ' / '  + numero2 + ' = ' + (numero1 / numero2));
+            }
+
+          
+      </script>
+
+  </head>
+
+  <body>
+  <center>
+      <h1>Calculadora</h1>
+      <div>
+        <button onclick="sumar()">SUMAR</button>
+        <button onclick="restar()">RESTAR</button>
+        <button onclick="multiplicar()">MULTIPLICAR</button>
+        <button onclick="dividir()">DIVIDIR</button>
+      </div>
+      <div id="resultado"></div>
+  </center>
+
+  </body>
+</html>
