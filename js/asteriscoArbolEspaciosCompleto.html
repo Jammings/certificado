@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Asterisco Guion</title>
+
+
+      <script>
+        var n = 1;
+        var k = 0;
+        var e = 0;
+        var cadena = " ";
+
+      while (e < 5){
+        e = e + 1;
+            while(k < 4){
+                cadena = cadena + "  ";
+                  k = k + 2;
+            }     
+            
+            k = 0;  
+            while(k < n){
+                  cadena = cadena + " * ";
+                  k = k + 1;
+            }
+        
+
+
+        cadena = cadena + "\n"; 
+        n = n + 1;
+ 
+      }
+      window.alert(cadena);
+
+
+
+
+
+      </script>
+
+  </head>
+
+  <body></body>
+</html>

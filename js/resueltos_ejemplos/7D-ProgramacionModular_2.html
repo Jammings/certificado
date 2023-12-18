@@ -1,0 +1,57 @@
+<html> 
+    <head>
+        <meta charset="UTF-8"/>
+        <script>             
+           
+            function dibujoCuadrado(){
+                
+                var cadena = "";
+
+                for(var n = 0; n < 5 ; n=n+1){
+
+                    for(var k = 0; k < 5; k = k +1){
+
+                        cadena = cadena + "*";
+
+                    }
+
+                    cadena = cadena + "\n";
+
+                }
+
+                window.alert(cadena);
+
+                
+            }
+
+            function dibujoPino(){
+                var guion = 4;
+                var asterisco = 1;
+                var cadena = "";
+
+                for(var k = 0; k < 5; k = k+1){
+
+                    for(var n = 0; n<guion;n = n + 1){
+                        cadena = cadena + "-";
+                    }
+                    for(var n = 0; n<asterisco;n = n + 1){
+                        cadena = cadena + "*";
+                    }
+                    guion=guion-1;
+                    asterisco =  asterisco + 2;
+                    cadena = cadena + "\n";
+
+                }
+
+                window.alert(cadena);
+              
+            }
+
+        </script> 
+    </head>
+    <body>
+        <button onclick="dibujoCuadrado()">CUADRADO</button>
+        <button onclick="dibujoPino()">PINO</button>
+    </body>
+
+</html>

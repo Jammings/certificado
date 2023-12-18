@@ -1,0 +1,27 @@
+<html> 
+    <head>
+        <meta charset="UTF-8"/>
+        <script>             
+            var cadena ="";
+            var guiones = 4;
+            var asteriscos = 1;
+            
+            for(var k = 0; k<5;k=k+1){
+
+                for(var n = 0;n<guiones;n=n+1){
+                    cadena=cadena+"-";
+                }
+                for(var n = 0;n<asteriscos;n=n+1){
+                    cadena=cadena+"*";
+                }    
+                cadena=cadena+"\n";
+                guiones = guiones -1;
+                asteriscos = asteriscos +2;        
+                   
+            }
+            window.alert(cadena);
+        </script> 
+    </head>
+    <body></body>
+
+</html>

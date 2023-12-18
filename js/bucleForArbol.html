@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bucle For</title>
+
+
+      <script>
+var cadena = " ";
+
+for (var n = 1; n < 6; n = n + 1) {
+  for (var h = 0; h < 6 - n; h = h + 1) {
+    cadena = cadena + " ";
+  }
+  for (var k = 0; k < n; k = k + 1) {
+    cadena = cadena + " * ";  
+  }
+  cadena = cadena + "\n";
+}
+
+window.alert(cadena);
+
+      </script>
+
+  </head>
+
+  <body></body>
+</html>

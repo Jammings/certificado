@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Programacion Modular funciones</title>
+    <style>
+      button {
+        font-size: 20px;
+        background-color: rgb(7, 148, 7);
+        color: aliceblue;
+        border-radius: 10px;
+        padding: 10px;
+        box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.3);
+
+      }
+
+      button:active {
+        font-size: 20px;
+        background-color: rgb(23, 96, 23);
+        color: aliceblue;
+        border-radius: 10px;
+        padding: 10px;
+        box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.3);
+      }
+    </style>
+    
+      <script>
+          function cuadro(){
+            var cadena = " ";
+            
+            for(var n = 0; n < 5 ; n = n + 1 ){
+                for(var k = 0; k < 5 ; k = k + 1 ){  
+                    cadena = cadena + " * ";
+              }
+                    cadena = cadena + "\n";   
+            }
+            window.alert(cadena);
+            }
+
+
+          function pino(){
+          var cadena = " ";
+          
+          for (var n = 1; n < 6; n = n + 1) {
+              for (var h = 0; h < 6 - n; h = h + 1) {
+                cadena = cadena + " ";
+              }
+              for (var k = 0; k < n; k = k + 1) {
+                cadena = cadena + " * ";  
+              }
+              cadena = cadena + "\n";
+          }
+          window.alert(cadena);
+        }
+      </script>
+
+  </head>
+
+  <body>
+    
+    <button onclick="cuadro()">Cuadro</button>
+    <button onclick="pino()">Pino</button>
+
+  </body>
+</html>
