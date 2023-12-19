@@ -51,6 +51,7 @@
       <script>
           var hecho = true;
           var listo = true;
+          var num1;
           
           function crearTabla(){
             if(listo == true) {
@@ -70,11 +71,25 @@
           }
           
           function reset() {
-            listo = true;
-            hecho = true;
-            document.getElementById("tabla").innerHTML = "";
-            }
+              listo = true;
+              hecho = true;
+              document.getElementById("tabla").innerHTML = "";
+              }
           
+          function insertaNum() {
+              num1 = parseInt(prompt("Introduce un número:"));
+              
+            }
+            function dibujo() {
+              if (num1 > 0)    {
+                    var valor = document.getElementById("tabla").innerHTML
+                    document.getElementById("tabla").innerHTML= valor + "<table><tr><th> Estudios <th> Año </th></tr><table>";
+                     num1= num1 - 1;            
+
+                  }
+              }
+          
+
           
       </script>
 
@@ -86,6 +101,8 @@
                 <button onclick="crearTabla()">Crear Tabla</button>
                 <button onclick="tablaEstudio()">Crear Tabla Estudio</button>
                 <button onclick="reset()">Reiniciar</button>
+                <button onclick="insertaNum()">Pide un número</button>
+                <button onclick="dibujo()">Dibujo</button>
                 <div id="tabla"></div>
          </center>
 
