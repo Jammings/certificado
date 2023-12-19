@@ -49,14 +49,32 @@
     </style>
     
       <script>
-
+          var hecho = true;
+          var listo = true;
+          
           function crearTabla(){
-              document.getElementById("tabla").innerHTML="<table><tr><th> Nombre <th> Edad </th><th> Estatura </th></th></tr><table>";
+            if(listo == true) {
+              var valor = document.getElementById("tabla").innerHTML  
+                document.getElementById("tabla").innerHTML="<table><tr><th> Nombre <th> Edad </th><th> Estatura </th></th></tr><table>" + valor ;
+                listo = false;
+              }
+          }
+            
+          function tablaEstudio(){
+              if(hecho == true) {
+                  var valor = document.getElementById("tabla").innerHTML
+                  document.getElementById("tabla").innerHTML= valor + "<table><tr><th> Estudios <th> Año </th></tr><table>";
+                  hecho = false;
+                }
+            
+          }
+          
+          function reset() {
+            listo = true;
+            hecho = true;
+            document.getElementById("tabla").innerHTML = "";
             }
           
-          function tablaEstudio(){
-              document.getElementById("tablaEstudio").innerHTML="<table><tr><th> Estudios <th> Año </th></tr><table>";
-            }
           
       </script>
 
@@ -67,10 +85,9 @@
 
                 <button onclick="crearTabla()">Crear Tabla</button>
                 <button onclick="tablaEstudio()">Crear Tabla Estudio</button>
-                    <div id="tabla"></div>
-                    
-                    <div id="tablaEstudio"></div>
-          </center>
+                <button onclick="reset()">Reiniciar</button>
+                <div id="tabla"></div>
+         </center>
 
   </body>
 </html>

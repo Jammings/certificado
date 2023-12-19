@@ -55,7 +55,10 @@
             }
           
           function tablaEstudio(){
-              document.getElementById("tablaEstudio").innerHTML="<table><tr><th> Estudios <th> Año </th></tr><table>";
+              var valor = document.getElementById("tabla").innerHTML
+              document.getElementById("tabla").innerHTML= valor + "<table><tr><th> Estudios <th> Año </th></tr><table>";
+              
+                return false
             }
           
       </script>
@@ -68,9 +71,7 @@
                 <button onclick="crearTabla()">Crear Tabla</button>
                 <button onclick="tablaEstudio()">Crear Tabla Estudio</button>
                     <div id="tabla"></div>
-                    
-                    <div id="tablaEstudio"></div>
-          </center>
+         </center>
 
   </body>
 </html>
