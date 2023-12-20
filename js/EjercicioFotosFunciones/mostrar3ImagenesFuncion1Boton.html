@@ -38,19 +38,27 @@
     </style>
     
       <script>
-          var listo = true;
+          var listo = 0;
           var gatico = "gatico.png";
           var perro = "https://t1.uc.ltmcdn.com/es/posts/9/5/7/como_cuidar_a_un_pinscher_miniatura_42759_600.jpg"
+          var pajaro = "loro.jfif"
           
           function imagen1(){
-            if(listo == true) {
+            if(listo == 0) {
               document.getElementById("imagenes").innerHTML = "<img src='" + gatico + "'/>";
-
-              listo = false;              
-            }else{
+              listo = listo + 1;
+            
+            }else if(listo == 1){
               document.getElementById("imagenes").innerHTML="<img src='"+ perro + "'/>";
-              listo = true;
+              listo = listo + 1;
+            
+            }else if(listo == 2){
+              document.getElementById("imagenes").innerHTML="<img src='"+ pajaro + "'/>";
+              listo = 0;
             }
+          
+          
+          
           }
 
           function reset() {
@@ -59,13 +67,14 @@
               document.getElementById("imagenes").innerHTML = "";
           }
          
+         
       </script>
 
   </head>
 
   <body>
         <center>
-                <button onclick="imagen1()">Crear Gatico y Perrito</button>
+                <button onclick="imagen1()">Crear Gatico, Perrito y Loro</button>
                 <button onclick="reset()">Reiniciar</button>
                 <div id="imagenes"></div>
         </center>
