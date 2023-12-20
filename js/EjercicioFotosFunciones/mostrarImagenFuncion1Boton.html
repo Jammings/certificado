@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Programacion Modular funciones</title>
+    <style>
+      
+      button {
+        font-size: 20px;
+        background: #20CCFC;
+        background: linear-gradient(135deg, #20CCFC, #D887FC);
+        color: rgb(255, 255, 255);
+        border-radius: 10px;
+        padding: 10px;
+        box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.3);
+        border: 1px solid;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+      }
+
+      button:active {
+        font-size: 25px;
+        color: rgb(255, 255, 255);
+        border-radius: 10px;
+        padding: 10px;
+        box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.3);
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      }
+      div {
+        margin-top: 80px;
+      }
+      img {
+        max-width: 20%;
+      }
+
+
+    </style>
+    
+      <script>
+          var hecho = true;
+          var listo = true;
+          
+          function imagen1(){
+            if(listo == true) {
+              document.getElementById("imagenes").innerHTML="<img src='gatico.png'>";
+              listo = false;              
+            }else{
+              document.getElementById("imagenes").innerHTML="<img src='https://t1.uc.ltmcdn.com/es/posts/9/5/7/como_cuidar_a_un_pinscher_miniatura_42759_600.jpg'>";
+              listo = true;
+            }
+          }
+        
+            
+         
+          function reset() {
+              listo = true;
+              hecho = true;
+              document.getElementById("imagenes").innerHTML = "";
+          }
+          
+         
+
+          
+      </script>
+
+  </head>
+
+  <body>
+        <center>
+                <button onclick="imagen1()">Crear Gatico y Perrito</button>
+                <button onclick="reset()">Reiniciar</button>
+                <div id="imagenes"></div>
+        </center>
+
+  </body>
+</html>
