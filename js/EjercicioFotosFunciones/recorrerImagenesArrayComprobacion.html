@@ -85,15 +85,18 @@
             }
 
             function seleccionaTuFoto() {
-              
-              var url = prompt("Introduce el nombre de la imagen:");
-              for (var n = 0; n < animales.length; n = n + 1) {
-                      if (url == animales[n]){
-                        document.getElementById("imagen").innerHTML='<img src="'+ url + '"/>';
-                        return;
+              var nombre = prompt("Introduce el nombre de la imagen:");
+              var n = 0;
+              var b = true;
+              while (n < animales.length) {
+                      if (animales[n] == nombre){
+                        document.getElementById("imagen").innerHTML='<img src="'+ nombre + '"/>';
+                        b = false;
                         }
-                         document.getElementById("imagen").innerHTML='<h1>NO INGRESASTE UNA IMAGEN VÁLIDA</h1>';
-                    }
+                        n = n + 1;
+                      }
+                      if (b == true)
+                      document.getElementById("imagen").innerHTML='<h1>NO INGRESASTE UNA IMAGEN VÁLIDA</h1>';
                   }
           
 
