@@ -37,15 +37,15 @@
 
     </style>
         <script>
-            var n = -1;
-
-            var animales = [
+          var n = -1;
+          
+          var animales = [
             "gatico.png", 
             "https://t1.uc.ltmcdn.com/es/posts/9/5/7/como_cuidar_a_un_pinscher_miniatura_42759_600.jpg", 
             "loro.jfif"
-            ]
-            
-            
+          ]
+          
+          
             function cambio(orden){
                 if(orden == "atras"){
                     n = n - 1;
@@ -66,14 +66,33 @@
                 document.getElementById("imagen").innerHTML='<img src="'+ url + '"/>';
      
             }
+            //  BUCLE CON FOR //
+            function recorrerArray(){
+              for (var m = 0; m < animales.length; m = m + 1) {
+                window.alert(animales[m]);
+                console.log(animales[m]);
+              }
+            }
 
+            //  BUCLE CON WHILE //
+            function recorrerArrayWhile(){
+              var n = 0;
+              while (n < animales.length) {
+                window.alert(animales[n]);
+                console.log(animales[n]);
+                n = n + 1;
+              }
+            }
+              
         </script>
     </head>
     <body>
         <center>
                     <button onclick="cambio('adelante')">ADELANTE</button> 
                     <button onclick="cambio('atras')">ATRAS</button>
-                    <button onclick="seleccion()">INGRESA URL O NOMBRE</button>               
+                    <button onclick="seleccion()">INGRESA URL O NOMBRE</button>
+                    <button onclick="recorrerArray()">RECORRER CON FOR</button> 
+                    <button onclick="recorrerArrayWhile()">RECORRER CON WHILE</button>                
                     
                     <div id="imagen"></div>
         </center>
