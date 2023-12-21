@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <script>
+            var n = -1;
+
+            var animales = ["perro.jpg","gato.png","pajaro.jpeg","avion.jpeg"];
+            
+            function cambio_adelante(){
+                
+                n=n+1;
+                if(n==4){
+                    n=0;
+                }
+                document.getElementById("imagen").innerHTML='<img src="./img/'+animales[n]+'"/>';
+                            
+                            
+            }
+            function cambio_atras(){            
+                
+                n=n-1;
+                if(n<=-1){
+                    n=3;
+                }
+                document.getElementById("imagen").innerHTML='<img src="./img/'+animales[n]+'"/>';
+                                            
+            }
+
+            function cambio(palabra){
+                window.alert(palabra);
+            }
+
+
+        </script>
+    </head>
+    <body>
+        <button onclick="cambio('adelante')">ADELANTE</button> 
+        <button onclick="cambio('atras')">ATRAS</button>          
+        <div id="imagen">   
+            
+        </div>
+    </body>
+    
+
+</html>

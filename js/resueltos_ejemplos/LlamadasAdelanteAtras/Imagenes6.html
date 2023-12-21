@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <script>
+            var n = 0;
+
+            var animales = ["perro.jpg","gato.png","pajaro.png","avion.jpg"];
+    
+            function cambio(){
+                
+                document.getElementById("imagen").innerHTML='<img src="./img/'+animales[n]+'"/>';
+                document.getElementById("b").innerHTML=animales[n+1];
+                n=n+1;
+
+                if(n>3){
+                    n=0;
+                }
+                document.getElementById("b").innerHTML=animales[n];
+                            
+            }
+
+
+        </script>
+    </head>
+    <body>
+        <button id="b" onclick="cambio()">CAMBIAR IMAGEN</button>        
+        <div id="imagen">   
+            
+        </div>
+    </body>
+    
+
+</html>

@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <script>
+            var n = 0;
+
+            var animales = ["perro.jpg","gato.png","pajaro.png"];
+
+            window.alert(animales[0]);
+            window.alert(animales[1]);
+            window.alert(animales[2]);
+            window.alert(animales[3]);
+           
+           
+            function cambio(){
+                
+                if(n==0){
+                    document.getElementById("imagen").innerHTML="<img src='./img/"+animal1+"'/>";
+                    n=n+1;
+                }else if(n==1){
+                    document.getElementById("imagen").innerHTML='<img src="./img/'+animal2+'"/>';
+                    n=n+1;
+                }else if(n==2){
+                    document.getElementById("imagen").innerHTML='<img src="./img/'+animal3+'"/>';
+                    n=0;
+                 }
+            
+            }
+
+
+        </script>
+    </head>
+    <body>
+        <button onclick="cambio()">CAMBIAR IMAGEN</button>        
+        <div id="imagen">   
+            
+        </div>
+    </body>
+    
+
+</html>

@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <script>
+            var n = true;
+            function cambio(){
+                
+                if(n==true){
+                    document.getElementById("imagen").innerHTML='<img src="./img/perro.jpg"/>';
+                    n=false;
+                }else{
+                    document.getElementById("imagen").innerHTML='<img src="./img/gato.png"/>';
+                    n=true;
+                 }
+            
+            }
+
+
+        </script>
+    </head>
+    <body>
+        <button onclick="cambio()">CAMBIAR IMAGEN</button>        
+        <div id="imagen">   
+            
+        </div>
+    </body>
+    
+
+</html>

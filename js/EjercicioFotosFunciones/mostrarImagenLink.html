@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Funcion atras adelante seleccion con arrays</title>
+    <style>
+      
+      button {
+        font-size: 20px;
+        background: #20CCFC;
+        background: linear-gradient(135deg, #20CCFC, #D887FC);
+        color: rgb(255, 255, 255);
+        border-radius: 10px;
+        padding: 10px;
+        box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.3);
+        border: 1px solid;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+      }
+
+      button:active {
+        font-size: 25px;
+        color: rgb(255, 255, 255);
+        border-radius: 10px;
+        padding: 10px;
+        box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.3);
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      }
+      div {
+        margin-top: 80px;
+      }
+      img {
+        max-width: 20%;
+      }
+
+
+    </style>
+        <script>
+            var n = -1;
+
+            var animales = [
+            "gatico.png", 
+            "https://t1.uc.ltmcdn.com/es/posts/9/5/7/como_cuidar_a_un_pinscher_miniatura_42759_600.jpg", 
+            "loro.jfif"
+            ]
+            
+            
+            function cambio(orden){
+                if(orden == "atras"){
+                    n = n - 1;
+                    if(n <= - 1){
+                        n = 2;
+                    }                    
+                }else if(orden == "adelante"){
+                    n = n + 1;
+                    if(n == 2){
+                        n = 0;
+                    }
+                }
+                document.getElementById("imagen").innerHTML='<img src="'+ animales[n] + '"/>';
+            }
+            
+            function seleccion() {
+                var url = prompt("Introduce el nombre de la imagen:");
+                document.getElementById("imagen").innerHTML='<img src="'+ url + '"/>';
+     
+            }
+
+        </script>
+    </head>
+    <body>
+        <center>
+                    <button onclick="cambio('adelante')">ADELANTE</button> 
+                    <button onclick="cambio('atras')">ATRAS</button>
+                    <button onclick="seleccion()">SELECCIÓN</button>               
+                    
+                    <div id="imagen"></div>
+        </center>
+    </body>
+    
+
+</html>
