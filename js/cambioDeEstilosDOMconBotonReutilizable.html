@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cambio de estilos a traves de DOM</title>
+    <style>
+        img {
+            width: 25%;
+        }
+    </style>
+    
+    <script>
+        function cambioColor(){
+            var caja = document.getElementById("caja").style;
+            var boton = document.getElementById("boton").style;
+            var centrar = document.getElementById("centrar").style;
+            var imgDiv = document.getElementById("imgDiv").style;
+            var mundo = document.getElementById("mundo").style;
+
+            imgDiv.display="flex";
+            imgDiv.justifyContent="center";
+
+            mundo.display="flex";
+            mundo.justifyContent="center";
+
+            caja.display="flex";
+            caja.justifyContent="center";
+            caja.color="red";
+            caja.backgroundColor="black";
+            caja.fontSize="45px";
+            caja.width="40%"
+
+            document.getElementById("imagen").setAttribute("src", "./EjercicioFotosFunciones/gatico.png");
+            
+            centrar.display="flex";
+            centrar.justifyContent="center";
+           
+            boton.backgroundColor="red";
+            boton.display="flex";
+            boton.justifyContent="center";
+        }
+
+            
+        // Codigo para reutilizar el boton y volver a la imagen anterior //
+          var b=true;
+            function cambioBoton(){
+                if(b==true){
+                    //document.getElementById("caja").setAttribute("class", "clase2");
+                    cambioColor();
+                    b=false;
+                }else{
+                    document.getElementById("caja").style="";
+                    document.getElementById("boton").style="";
+                    document.getElementById("centrar").style="";
+                    document.getElementById("imgDiv").style="";
+                    document.getElementById("mundo").style="";
+                    document.getElementById("imagen").setAttribute("src", "https://t3.gstatic.com/licensed-image?q=tbn:ANd9GcRoT6NNDUONDQmlthWrqIi_frTjsjQT4UZtsJsuxqxLiaFGNl5s3_pBIVxS6-VsFUP_");
+                    
+                    b=true;
+                }
+            } 
+
+    </script>
+
+</head>
+<body>
+        <div class="clase2">
+            
+            <div id="centrar">
+                <button id="boton" onclick="cambioBoton()">CAMBIO COLOR</button>
+            </div>
+            
+            <div id="mundo">
+            <div id="caja" class="clase1">HOLA MUNDO</div>
+            </div>
+            
+            <div id="imgDiv">
+                <img id="imagen" src="https://t3.gstatic.com/licensed-image?q=tbn:ANd9GcRoT6NNDUONDQmlthWrqIi_frTjsjQT4UZtsJsuxqxLiaFGNl5s3_pBIVxS6-VsFUP_"/>
+            </div>
+        
+        </div> 
+           
+
+</body>
+</html>
