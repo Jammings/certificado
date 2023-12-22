@@ -1,0 +1,19 @@
+
+
+## Ejercicio BODEGA ##
+
+BodegaTiene que tener MENU Y FOOTER
+- Página principal (index.html, ubicación)
+- Historia de la bodega
+- Galeria fotografica
+- Catálogo de productos
+- Visitas (text, number, radio, check, date)
+- Contacto (formulario: text, number, textarea, email)
+
+
+Requisitos: 
+- Responsive de 0 a 800px y mayor de 800px.
+- Menu: hover y hamburguesa
+- Documentos externos y proyecto ordenado (css fuera)
+- JS: Galeria
+- Botón bodega de dia bodega de noche (modo noche)
