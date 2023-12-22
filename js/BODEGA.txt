@@ -17,3 +17,4 @@ Requisitos:
 - Documentos externos y proyecto ordenado (css fuera)
 - JS: Galeria
 - Botón bodega de dia bodega de noche (modo noche)
+- 24 MB como maximo para adjuntar
