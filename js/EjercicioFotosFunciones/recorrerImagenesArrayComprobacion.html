@@ -88,7 +88,7 @@
               var nombre = prompt("Introduce el nombre de la imagen:");
               var n = 0;
               var b = true;
-              while (n < animales.length) {
+              while ((n < animales.length) && (b == true)) {
                       if (animales[n] == nombre){
                         document.getElementById("imagen").innerHTML='<img src="'+ nombre + '"/>';
                         b = false;
