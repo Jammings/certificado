@@ -9,10 +9,19 @@
         function pedir(){
             
             var numero = parseInt(prompt("Ingresa un numero"));
+            var dato = prompt("Qué deseas hacer: \n PAR \n ATRAS \n CONTAR PARES \n");
             
-        /*     parImpar(numero);
-            regresiva(numero); */
-            pares(numero);
+
+            if (dato == 'PAR') {
+                parImpar(numero);
+            }
+            if (dato == 'ATRAS') {
+                regresiva(numero);
+            }
+            if (dato == 'CONTAR') {
+                pares(numero);
+            }
+
         }
 
         function parImpar(n){
