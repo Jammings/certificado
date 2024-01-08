@@ -10,9 +10,9 @@
             
             var numero = parseInt(prompt("Ingresa un numero"));
             
-            parImpar(numero);
-            regresiva(numero);
-                    
+        /*     parImpar(numero);
+            regresiva(numero); */
+            pares(numero);
         }
 
         function parImpar(n){
@@ -26,20 +26,29 @@
 
         function regresiva(k){
 
-            while(k >= 1){
+            while(k >= 0){
                 window.alert(k);
                 k = k - 1;
             }
-
-
         }
+
+        function pares(h){
+            
+            var par = 2;
+            while (h > 0){
+                window.alert(par)
+                h = h - 1;
+                par = par + 2;
+                }
+            }
+        
+  
         
     </script>
 </head>
 <body>
 
     <button onclick="pedir()">Pedir número</button>
-    <button onclick="pedir()">Introduce un número</button>
 
 </body>
 </html>

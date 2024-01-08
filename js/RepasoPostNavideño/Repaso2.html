@@ -1,0 +1,77 @@
+<html>
+    <head>
+
+       <script>
+            function coger(){
+                
+                var numero = parseFloat(prompt("Mete un número"));     
+                
+                numPares(numero);
+                
+            }
+
+            function parImpar(numero){                
+                
+                if(numero%2==0){
+                    window.alert("El número es PAR");
+                }else{
+                    window.alert("El número es IMPAR");
+                }
+
+            } 
+
+            function paTras(numero){
+
+                while(numero>=0){
+                    window.alert(numero);
+                    numero=numero-1;
+                }
+
+            }
+
+            function numPares1(numero){
+                var par=2;
+                var n=0;
+                while(n<numero){
+                    window.alert(par);
+                    n=n+1;
+                    par=par+2;
+                }
+
+            }
+            function numPares2(numero){
+                var par=2;                
+                while(numero>0){
+                    window.alert(par);
+                    numero=numero-1;
+                    par=par+2;
+                }
+
+            }
+
+            function numPares3(numero){                
+                var n=1;
+                while(n<=numero){
+                    window.alert(n*2);
+                    n=n+1;                   
+                }
+
+            }
+            function numPares4(numero){                
+                
+                while(numero>0){
+                    window.alert(numero*2);
+                    numero=numero-1;                   
+                }
+
+            }
+       </script>
+
+    </head>
+    <body>
+
+      <button onclick="coger()">Pedir numero</button>
+           
+    </body>
+
+</html>

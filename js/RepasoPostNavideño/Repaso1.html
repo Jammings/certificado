@@ -1,0 +1,42 @@
+<html>
+    <head>
+
+        <style>
+            .clase1{
+                color:yellow;
+                background-color: red;
+                font-size: 10px;               
+            }
+            .clase2{
+                color:red;
+                background-color: yellow;
+                font-size: 50px;
+                border: 2px solid black;
+                margin: 20%;
+            }
+
+        </style>
+
+        <script>
+
+            function recoger(){
+                var nombre = prompt("Mete una palabra");
+                mostrar(nombre);
+            }
+
+            function mostrar(nombre){
+                window.alert(nombre);
+            }
+            
+
+        </script>
+
+    </head>
+    <body>        
+
+        <button onclick="mostrar('Pedrito')">PINCHA 1</button>
+        <button onclick="recoger()">PINCHA 2</button>
+           
+    </body>
+
+</html>
