@@ -11,6 +11,7 @@
             var numero = parseInt(prompt("Ingresa un numero"));
             
             parImpar(numero);
+            regresiva(numero);
                     
         }
 
@@ -22,12 +23,23 @@
                 window.alert("El número es IMPAR");
             }
         }
+
+        function regresiva(k){
+
+            while(k >= 1){
+                window.alert(k);
+                k = k - 1;
+            }
+
+
+        }
         
     </script>
 </head>
 <body>
 
     <button onclick="pedir()">Pedir número</button>
+    <button onclick="pedir()">Introduce un número</button>
 
 </body>
 </html>
