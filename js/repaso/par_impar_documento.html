@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Par Impar</title>
+    <script>
+        
+        function pedir(){
+            
+            var numero = parseInt(prompt("Ingresa un numero"));
+            var dato = prompt("Qué deseas hacer: \n OPCIÓN: PAR \n OPCIÓN: ATRAS \n OPCIÓN: CONTAR \n");
+            
+
+            if (dato == 'PAR') {
+                parImpar(numero);
+            }else if (dato == 'ATRAS') {
+                regresiva(numero);
+            }else if (dato == 'CONTAR') {
+                pares(numero);
+            }
+
+        }
+
+        function parImpar(n){
+           
+            if(n % 2 == 0){
+
+                document.getElementById("numeros").innerHTML="<h1>El número es PAR</h1>";
+            }else {
+
+                document.getElementById("numeros").innerHTML="<h1>El número es IMPAR</h1>";
+            }
+        }
+
+        function regresiva(k){
+
+            while(k >= 0){
+                var print = document.getElementById("numeros").innerHTML
+                document.getElementById("numeros").innerHTML= print +"<h1>" + k + "</h1>";
+                k = k - 1;
+            }
+        }
+
+        function pares(h){
+            
+            var par = 2;
+            while (h > 0){
+                var print = document.getElementById("numeros").innerHTML
+                document.getElementById("numeros").innerHTML=print +"<h1>" + par + "</h1>";
+                h = h - 1;
+                par = par + 2;
+                }
+            }
+        
+        
+    </script>
+</head>
+<body>
+
+    <button onclick="pedir()">Pedir número</button>
+    <div id="numeros"></div>
+
+</body>
+</html>
