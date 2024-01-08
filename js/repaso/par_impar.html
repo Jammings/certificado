@@ -7,27 +7,27 @@
     <script>
         
         function pedir(){
-            var numero = parseInt(prompt("Ingresa un numero"));
-                    
-            if (numero % 2 == 0 ) {
-           window.alert("Tu numero es PAR");
-        
-            }else if (numero% 2 == 1 ) {
-                window.alert("Tu numero es IMPAR");
             
-            }
-            else{
-                    window.alert("Te has equivocado no has ingresado un número")
-                }
-
+            var numero = parseInt(prompt("Ingresa un numero"));
+            
+            parImpar(numero);
+                    
         }
-        pedir()
 
+        function parImpar(n){
+           
+            if(n % 2 == 0){
+                window.alert("El número es PAR");
+            }else {
+                window.alert("El número es IMPAR");
+            }
+        }
+        
     </script>
 </head>
 <body>
-    
 
+    <button onclick="pedir()">Pedir número</button>
 
 </body>
 </html>
