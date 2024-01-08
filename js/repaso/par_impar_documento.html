@@ -9,7 +9,7 @@
         function pedir(){
             
             var numero = parseInt(prompt("Ingresa un numero"));
-            var dato = prompt("Qué deseas hacer: \n OPCIÓN: PAR \n OPCIÓN: ATRAS \n OPCIÓN: CONTAR \n");
+            var dato = prompt("Qué deseas hacer: \n OPCIÓN: PAR \n OPCIÓN: ATRAS \n OPCIÓN: CONTAR \n").toUpperCase() ;
             
 
             if (dato == 'PAR') {
@@ -25,10 +25,8 @@
         function parImpar(n){
            
             if(n % 2 == 0){
-
                 document.getElementById("numeros").innerHTML="<h1>El número es PAR</h1>";
             }else {
-
                 document.getElementById("numeros").innerHTML="<h1>El número es IMPAR</h1>";
             }
         }
