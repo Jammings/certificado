@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>array tabla</title>
+    <script>
+        
+        var nombres = ["Ricardo", "José", "Juan", "María"];
+        
+        function agregar(){
+                
+            nombres.push (prompt("Introduce un nombre"));
+            ver();
+        }
+
+        function ver(){
+            
+            var n = 0;
+            var nuevo = "";
+
+            while(n < nombres.length){
+                nuevo = nuevo + nombres[n] + "</br>";
+                n = n + 1;
+            }
+               document.getElementById("mostrar").innerHTML= nuevo;
+            }
+
+            function buscar(){
+                var nombre = prompt("Introduce la persona a buscar");
+                var encontrado = nombres.includes(nombre);
+                
+                if (encontrado) {
+                    document.getElementById("mostrar").innerHTML= "Tu nombre está en la lista";
+                    } else {
+                    document.getElementById("mostrar").innerHTML= "Tu nombre NO está en la lista";
+                    }
+            }
+                        
+            function buscarWhile(){
+                var nombre = prompt("Introduce la persona a buscar");
+                var n = 0;
+                var b = false;
+
+                while(n < nombres.length){
+                    
+                    if(nombres[n]==nombre){
+                    b = true;
+                    document.getElementById("mostrar").innerHTML="Tu nombre esta en la lista";
+                    }
+                
+                    n = n + 1;
+                }
+               
+                if(b == false){
+                document.getElementById("mostrar").innerHTML="Tu nombre NO esta en la lista";
+               } 
+
+            }
+
+    </script>
+</head>
+<body>
+
+    <button onClick="agregar()">Añadir</button>
+    <button onClick="buscar()">Buscar</button>
+    <button onClick="buscarWhile()">Buscar While</button>
+    <div id="mostrar"></div>
+    
+</body>
+</html>
