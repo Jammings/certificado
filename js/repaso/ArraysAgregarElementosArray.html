@@ -5,27 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>array tabla</title>
     <script>
+        
+        var palabras = ["Gatico", " Perro ", "Loro", "Puma", "Perico"];
+        
+        function agregar(){
+            
+            var animal = prompt("Introduce un animal nuevo");
+            palabras[palabras.length]=animal;
+
+            ver()
+        
+        }
 
         function ver(){
             
-            var palabras = ["Gatico", " Perro ", "Loro", "Puma", "Perico"];
             var n = 0;
             var animales = "";
 
             while(n < palabras.length){
-                animales = animales + "<tr><td>" + palabras[n] + "</tr></td>";
+                animales = animales + palabras[n] + "</br>";
                 n = n + 1;
             }
 
-               document.getElementById("mostrar").innerHTML= "<table border='1'><tr><th> LISTA </th></tr>" + animales + "</table>" ;
+               document.getElementById("mostrar").innerHTML= animales;
             }
-        
+            
 
     </script>
 </head>
 <body>
 
     <button onClick="ver()">Mostrar</button>
+    <button onClick="agregar()">Añadir</button>
     <div id="mostrar"></div>
     
 </body>
