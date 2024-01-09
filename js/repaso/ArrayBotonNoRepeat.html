@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>array tabla</title>
+    <script>
+        
+        var nombres = ["Ricardo", "José", "Juan", "María"];
+        
+
+        function ver(){
+            var n = 0;
+            var nuevo = "";
+            
+            while(n < nombres.length){
+                nuevo = nuevo + nombres[n] + "</br>";
+                n = n + 1;
+            }
+            document.getElementById("mostrar").innerHTML= nuevo;
+
+            }
+       
+        function agregar(){
+            nombres.push(prompt("Introduce un nombre"));
+            ver()
+        }
+
+        function reiniciar(){
+            nombres = [];
+            ver()
+            
+        }
+
+        function buscar(){
+            var nombre = prompt("Introduce la persona a buscar");
+            var n = 0;
+            var b = false;
+
+            while (n < nombres.length){
+                if(nombres[n] == nombre ){
+                    b = true;
+                    document.getElementById("mostrar").innerHTML="El nombre esta en la lista";
+                }
+                n = n + 1 ;
+            }
+
+            if (b == false){
+                document.getElementById("mostrar").innerHTML="El nombre NO esta en la lista";
+            }
+
+        }
+
+        function noRepeat(){
+            var nombre = prompt("Introduce la persona a buscar");
+            var n = 0;
+            var b = false;
+            while(n < nombres.length){
+                if(nombres[n] == nombre){
+                    b = true;
+                    document.getElementById("mostrar").innerHTML="El nombre ya esta en la lista, por favor utiliza otro"
+                }
+                n = n + 1;
+            }
+            if (b == false){
+                nombres.push;
+            }
+
+        }
+
+    </script>
+</head>
+<body>
+
+    <button onClick="ver()">Ver</button>
+    <button onClick="agregar()">Agregar</button>
+    <button onClick="reiniciar()">Reiniciar</button>
+    <button onClick="buscar()">Buscar</button>
+    <button onClick="noRepeat()">Agregar sin repetir</button>
+    <div id="mostrar"></div>
+    
+</body>
+</html>
